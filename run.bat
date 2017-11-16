@@ -1,3 +1,3 @@
 @echo off
-echo "Running program..."
+echo Running program...
 out.exe

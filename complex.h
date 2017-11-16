@@ -1,3 +1,5 @@
+#include <iostream>
+
 namespace acp {
 	class complex {
 		double re, im;
@@ -22,5 +24,7 @@ namespace acp {
 		complex& operator-=(const complex& other);
 	
 		complex& operator+=(const complex& other);
+
+		friend std::ostream& operator<<(std::ostream& stream, const complex& complex);
 	};
 };
