@@ -10,5 +10,6 @@ int main(int argc, char** argv) {
 	assert(acp::complex(5, 2) + acp::complex(2, -5) == acp::complex(7, -3));
 	assert(acp::complex(3, 2) - acp::complex(1, 1) == acp::complex(2, 1));
 	assert(acp::complex(3, 2) * acp::complex(1, 4) == acp::complex(-5, 14));
+	std::cout << "Passed!" << std::endl;
 	return 0;
 }

@@ -27,14 +27,14 @@ namespace acp {
 	complex complex::operator+(const complex& other) const {
 		complex result;
 		result.re = this->re + other.re;
-		result.im = this->re + other.im;
+		result.im = this->im + other.im;
 		return result;
 	}
 
 	complex complex::operator-(const complex& other) const {
 		complex result;
 		result.re = this->re - other.re;
-		result.im = this->re - other.im;
+		result.im = this->im - other.im;
 		return result;
 	}
 
