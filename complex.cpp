@@ -1,3 +1,5 @@
+#include "complex.h"
+
 namespace acp {
 	complex::complex(const complex& other) {
 		this->im = other.im;
