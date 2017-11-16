@@ -25,6 +25,8 @@ namespace acp {
 	
 		complex& operator+=(const complex& other);
 
+		bool operator==(const complex& other);
+
 		friend std::ostream& operator<<(std::ostream& stream, const complex& complex);
 	};
 };

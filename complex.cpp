@@ -48,6 +48,10 @@ namespace acp {
 		return *this;
 	}
 
+	bool complex::operator==(const complex& other) {
+		return this->im == other.im && this->re == other.re;
+	}
+
 	std::ostream& operator<<(std::ostream& stream, const acp::complex& complex) {
 		stream << "Complex[" << complex.re;
 		if(complex.im < 0) {
