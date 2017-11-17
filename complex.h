@@ -13,9 +13,9 @@ namespace acp {
 		
 		double get_im() const { return im; };
 
-		double set_re(double re) { this->re = re; };
+		void set_re(double re) { this->re = re; };
 
-		double set_im(double im) { this->im = im; };
+		void set_im(double im) { this->im = im; };
 	
 		complex(const complex& other);
 	
