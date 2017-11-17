@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cassert>
-#include "complex.h"
+#include "trig_functions.h"
 
 int main(int argc, char** argv) {
 	acp::complex c(5, -2);
@@ -11,5 +11,8 @@ int main(int argc, char** argv) {
 	assert(acp::complex(3, 2) - acp::complex(1, 1) == acp::complex(2, 1));
 	assert(acp::complex(3, 2) * acp::complex(1, 4) == acp::complex(-5, 14));
 	std::cout << "Passed!" << std::endl;
+
+	std::cout << acp::cos(acp::complex(1, 0)) << std::endl;
+
 	return 0;
 }

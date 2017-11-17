@@ -11,6 +11,7 @@ namespace acp {
 	complex tan(const complex);
 
 	complex tanh(const complex);
+	
 	complex acos(const complex);
 
 	complex asin(const complex);
