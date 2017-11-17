@@ -8,6 +8,10 @@ namespace acp {
 		complex() {this->re = 0.0; this->im = 0.0;}
 		complex(double r) {this->re = r; this->im = 0.0;}
 		complex(double r, double i) {this->re = r; this->im = i;}
+
+		double get_re() { return re; };
+		
+		double get_im() { return im; };
 	
 		complex(const complex& other);
 	
