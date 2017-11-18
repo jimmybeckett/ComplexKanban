@@ -1,7 +1,10 @@
-namespace acp {
-	double abs(const complex);
+#include "complex.h"
 
-	double arg(const complex);
+namespace acp {
+
+	complex abs(const complex);
+
+	complex arg(const complex);
 
 	complex conj(const complex);
 
@@ -9,7 +12,7 @@ namespace acp {
 
 	double norm(const complex);
 
-	complex polar(double mag, double ang=0.0);
+	//complex polar(double mag, double ang=0.0);
 
 	double real(const complex&);
 }

@@ -1,3 +1,6 @@
+#ifndef COMPLEX_HEADER
+#define COMPLEX_HEADER
+
 #include <iostream>
 
 namespace acp {
@@ -39,6 +42,16 @@ namespace acp {
 
 		bool operator==(const complex& other);
 
+		bool operator<(const complex& other);
+
+		bool operator>(const complex& other);
+
+		bool operator>=(const complex& other);
+
+		bool operator<=(const complex& other);
+
 		friend std::ostream& operator<<(std::ostream& stream, const complex& complex);
 	};
 };
+
+#endif
