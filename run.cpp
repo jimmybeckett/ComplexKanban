@@ -2,6 +2,7 @@
 #include <cassert>
 #include "trig_functions.h"
 #include "other_functions.h"
+#include "exp_functions.h"
 
 int main(int argc, char** argv) {
 	std::cout << "Running unit tests..." << std::endl;
@@ -16,6 +17,7 @@ int main(int argc, char** argv) {
 	assert((acp::sin(acp::complex(12, -5)) - acp::complex(-39.819, -62.6167)) < acp::complex(.001, .001));
 	assert(acp::tan(acp::complex(-4, 3)) - acp::complex(-0.0049082, 1.0007095) < acp::complex(.001, .001));
 	std::cout << "Trig tests passed!" << std::endl;
+	std::cout << "All tests passed!" << std::endl;
 
 	return 0;
 }

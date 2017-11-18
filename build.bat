@@ -1,3 +1,3 @@
 @echo off
-echo Building script... Copyright Russell Coleman 2017
-g++ -Wall -Werror *.cpp -o out.exe
+echo Building program...
+g++ -Wall -Werror *.cpp trig_functions\*.cpp exp_functions\*.cpp other_functions\*.cpp -o out.exe

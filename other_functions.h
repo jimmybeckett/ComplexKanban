@@ -1,3 +1,5 @@
+#ifndef OTHER_HEADER
+#define OTHER_HEADER
 #include "complex.h"
 
 namespace acp {
@@ -16,3 +18,5 @@ namespace acp {
 
 	double real(const complex&);
 }
+
+#endif

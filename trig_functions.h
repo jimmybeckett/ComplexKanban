@@ -1,3 +1,5 @@
+#ifndef TRIG_HEADER
+#define TRIG_HEADER
 #include "complex.h"
 
 namespace acp {
@@ -22,3 +24,5 @@ namespace acp {
 
 	complex cosh(const complex);
 };
+
+#endif

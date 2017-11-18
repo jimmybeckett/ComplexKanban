@@ -1,8 +1,7 @@
-#include <../other_functions.h>
-#include "../complex.h"
+#include "../other_functions.h"
 
 namespace acp {
-	complex exp(const complex c) {
-		return 	complex { 0, c.get_im() };;
+	double imag(const complex& c) {
+		return 	c.get_im();
 	}
 }
