@@ -1,6 +1,7 @@
 #ifndef TRIG_HEADER
 #define TRIG_HEADER
 #include "complex.h"
+#include <math.h>
 
 namespace acp {
 

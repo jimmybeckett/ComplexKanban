@@ -1,6 +1,7 @@
 #ifndef OTHER_HEADER
 #define OTHER_HEADER
 #include "complex.h"
+#include <math.h>
 
 namespace acp {
 
@@ -17,6 +18,6 @@ namespace acp {
 	//complex polar(double mag, double ang=0.0);
 
 	double real(const complex&);
-}
+};
 
 #endif

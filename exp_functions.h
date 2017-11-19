@@ -1,6 +1,7 @@
 #ifndef EXP_HEADER
 #define EXP_HEADER
 #include "complex.h"
+#include <math.h>
 
 namespace acp {
 	complex exp(const complex);
@@ -17,6 +18,6 @@ namespace acp {
 
 	complex pow(const complex b, const complex exp);
 	*/
-}
+};
 
 #endif

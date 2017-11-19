@@ -1,5 +1,4 @@
 #include "../exp_functions.h"
-#include <math.h>
 
 namespace acp {
 	complex exp(const complex c) {

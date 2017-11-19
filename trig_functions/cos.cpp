@@ -1,5 +1,4 @@
 #include "../trig_functions.h"
-#include <math.h>
 
 namespace acp {
 	complex cos(const complex c) {
