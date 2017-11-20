@@ -6,7 +6,7 @@
 #include <vector>
 
 namespace acp {
-	const double error = 0.01;
+	const double error = 0.0000001;
 
 	const complex complex_error = complex(error, error);
 
