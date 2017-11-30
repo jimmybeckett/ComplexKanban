@@ -1,7 +1,7 @@
 #ifndef TAN_TEST_HEADER
 #define TAN_TEST_HEADER
-#include "..\..\unit_tests.h"
-#include "..\..\trig_functions.h"
+#include "../../unit_tests.h"
+#include "../../trig_functions.h"
 
 namespace acp {
 	void tan_test() {
