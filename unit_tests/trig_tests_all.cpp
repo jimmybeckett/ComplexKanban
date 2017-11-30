@@ -1,6 +1,6 @@
 #ifndef TRIG_TEST_HEADER
 #define TRIG_TEST_HEADER
-#include "..\unit_tests.h"
+#include "../unit_tests.h"
 
 namespace acp {
 	void trig_tests_all() {

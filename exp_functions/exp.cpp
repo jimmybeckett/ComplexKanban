@@ -2,6 +2,9 @@
 
 namespace acp {
 	complex exp(const complex c) {
-		return complex{ cos(c.get_re()), sin(c.get_im()) };
+		complex temp;
+		temp.set_re(std::exp(c.get_re()) * std::cos(c.get_im()));
+		temp.set_im(std::exp(c.get_re()) * std::sin(c.get_im()));
+		return temp;
 	}
 }

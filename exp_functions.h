@@ -18,6 +18,6 @@ namespace acp {
 
 	complex pow(const complex b, const complex exp);
 	*/
-};
+}
 
 #endif

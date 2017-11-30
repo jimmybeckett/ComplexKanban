@@ -2,6 +2,7 @@
 #define UNIT_TEST_HEADER
 #include "complex.h"
 #include <iostream>
+#include "other_functions.h"
 #include <cassert>
 #include <vector>
 
@@ -18,6 +19,8 @@ namespace acp {
 
 	void tan_test();
 
+	void exp_test();
+
 	void arithmetic_test();
 
 	void trig_tests_all();
@@ -27,6 +30,6 @@ namespace acp {
 	void other_tests_all();
 
 	void run_all_tests();
-};
+}
 
 #endif
