@@ -42,6 +42,8 @@ namespace acp {
 
 		bool operator==(const complex& other);
 
+		bool operator!=(const complex& other);
+
 		bool operator<(const complex& other);
 
 		bool operator>(const complex& other);
