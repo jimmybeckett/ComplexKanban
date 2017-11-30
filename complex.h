@@ -52,6 +52,6 @@ namespace acp {
 
 		friend std::ostream& operator<<(std::ostream& stream, const complex& complex);
 	};
-};
+}
 
 #endif

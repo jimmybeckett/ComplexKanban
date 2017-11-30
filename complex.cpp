@@ -90,4 +90,4 @@ namespace acp {
 		stream << "i]";
 		return stream;
 	}
-};
+}

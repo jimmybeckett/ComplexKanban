@@ -24,6 +24,6 @@ namespace acp {
 	complex cos(const complex);
 
 	complex cosh(const complex);
-};
+}
 
 #endif

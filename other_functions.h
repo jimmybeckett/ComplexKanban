@@ -18,6 +18,6 @@ namespace acp {
 	//complex polar(double mag, double ang=0.0);
 
 	double real(const complex&);
-};
+}
 
 #endif
