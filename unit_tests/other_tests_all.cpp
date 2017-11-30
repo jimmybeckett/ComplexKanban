@@ -1,6 +1,6 @@
 #ifndef OTHER_TEST_HEADER
 #define OTHER_TEST_HEADER
-#include "..\unit_tests.h"
+#include "../unit_tests.h"
 
 namespace acp {
 	void other_tests_all() {
