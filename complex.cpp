@@ -59,6 +59,10 @@ namespace acp {
 		return this->im == other.im && this->re == other.re;
 	}
 
+	bool complex::operator!=(const complex& other) {
+		return this->im != other.im || this->re != other.re;
+	}
+
 	bool complex::operator<(const complex& other) {
 		return this->im < other.im && this->re < other.re;
 	}
