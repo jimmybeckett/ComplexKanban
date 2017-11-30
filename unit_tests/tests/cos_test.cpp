@@ -1,7 +1,7 @@
 #ifndef COS_TEST_HEADER
 #define COS_TEST_HEADER
-#include "..\..\unit_tests.h"
-#include "..\..\trig_functions.h"
+#include "../../unit_tests.h"
+#include "../../trig_functions.h"
 
 namespace acp {
 	void cos_test() {

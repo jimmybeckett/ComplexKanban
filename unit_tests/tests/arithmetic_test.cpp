@@ -1,6 +1,6 @@
 #ifndef ARITHMETIC_TEST_HEADER
 #define ARITHMETIC_TEST_HEADER
-#include "..\..\unit_tests.h"
+#include "../../unit_tests.h"
 
 namespace acp {
 	void arithmetic_test() {

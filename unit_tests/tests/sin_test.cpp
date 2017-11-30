@@ -1,7 +1,7 @@
 #ifndef SIN_TEST_HEADER
 #define SIN_TEST_HEADER
-#include "..\..\unit_tests.h"
-#include "..\..\trig_functions.h"
+#include "../../unit_tests.h"
+#include "../../trig_functions.h"
 
 namespace acp {
 	void sin_test() {
