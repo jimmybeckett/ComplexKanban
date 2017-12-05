@@ -1,7 +1,7 @@
 #ifndef EXP_TEST_HEADER
 #define EXP_TEST_HEADER
-#include "..\..\unit_tests.h"
-#include "..\..\exp_functions.h"
+#include "../../unit_tests.h"
+#include "../../exp_functions.h"
 
 namespace acp {
 	void exp_test() {
