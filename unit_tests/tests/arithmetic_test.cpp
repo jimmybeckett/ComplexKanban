@@ -1,5 +1,3 @@
-#ifndef ARITHMETIC_TEST_HEADER
-#define ARITHMETIC_TEST_HEADER
 #include "../../unit_tests.h"
 
 namespace acp {
@@ -25,9 +23,8 @@ namespace acp {
 		std::cout << "Multiplication tests passed!" << std::endl;
 		//division
 		std::cout << "Running division tests..." << std::endl;
-		assert(abs(complex(-7, 2) / complex(-9, 5) - complex(0.6886792, 0.1603773)) < complex_error);
+		assert(in_range(complex(-7, 2) / complex(-9, 5), complex(0.6886792, 0.1603773), complex_error));
 		std::cout << "Division tests passed!" << std::endl;
 		std::cout << "Arithmetic tests passed!" << std::endl;
 	}
 }
-#endif

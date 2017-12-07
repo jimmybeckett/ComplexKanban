@@ -1,7 +1,7 @@
 #include "../other_functions.h"
 
 namespace acp {
-	complex abs(const complex c) {
-		return complex{ std::abs(c.get_re()), std::abs(c.get_im()) };
+	double abs(const complex c) {
+		return sqrt(c.get_re() * c.get_re() + c.get_im() * c.get_im());
     }
 }

@@ -9,10 +9,10 @@ namespace acp {
 	complex log(const complex);
 
 	complex log10(const complex);
-	/*
-	complex pow(double b, const complex exp);
 
 	complex pow(const complex b, int exp);
+	/*
+	complex pow(double b, const complex exp);
 
 	complex pow(const complex b, double exp);
 

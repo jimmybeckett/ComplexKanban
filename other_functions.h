@@ -5,7 +5,7 @@
 
 namespace acp {
 
-	complex abs(const complex);
+	double abs(const complex);
 
 	complex arg(const complex);
 
