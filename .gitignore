@@ -26,6 +26,9 @@
 *.a
 *.lib
 
+# Visual Studio Junk
+*.vs
+
 # Executables
 *.exe
 *.out

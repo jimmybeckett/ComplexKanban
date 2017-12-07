@@ -13,6 +13,10 @@ namespace acp {
 
 	void run_unit_tests(std::vector<void(*)()>);
 
+	bool in_range(const complex, const complex, const complex error);
+
+	bool in_range(const double, const double, const double error);
+
 	void sin_test();
 	
 	void cos_test();
@@ -20,6 +24,8 @@ namespace acp {
 	void tan_test();
 
 	void exp_test();
+	
+	void abs_test();
 
 	void conj_test();
 
