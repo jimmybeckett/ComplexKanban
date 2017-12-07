@@ -27,6 +27,8 @@ namespace acp {
 	
 	void abs_test();
 
+	void conj_test();
+
 	void arithmetic_test();
 
 	void trig_tests_all();
