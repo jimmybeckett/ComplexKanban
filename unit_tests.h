@@ -25,6 +25,8 @@ namespace acp {
 	void arg_test();
 	
 	void arithmetic_test();
+
+	void asin_test();
 	
 	void conj_test();
 	

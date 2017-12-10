@@ -11,17 +11,17 @@ namespace acp {
 
 	complex tan(const complex);
 
+	complex asin(const complex);
+
+	complex acos(const complex);
+
+	complex atan(const complex);
+
 	complex sinh(const complex);
 
 	complex cosh(const complex);
 
 	complex tanh(const complex);
-
-	complex asin(const complex);
-	
-	complex acos(const complex);
-
-	complex atan(const complex);
 }
 
 #endif
