@@ -5,26 +5,21 @@
 
 namespace acp {
 	complex exp(const complex);
-<<<<<<< HEAD
-	/*
-	complex pow(double b, const complex exp);
-=======
 
 	complex log(const complex);
 
 	complex log10(const complex);
->>>>>>> 981122d4189d87b2b23247a95b72045d886f1b6e
 
-	complex pow(const complex b, int exp);
-	/*
-	complex pow(double b, const complex exp);
+	complex pow(const complex, const complex);
 
-	complex pow(const complex b, double exp);
+	complex pow(const double, const complex);
 
-	complex pow(const complex b, const complex exp);
+	complex pow(const complex, const double);
 
-	complex sqrt(const complex)
-	*/
+	complex pow(const complex, const int);
+
+	complex sqrt(const complex);
+	
 }
 
 #endif

@@ -21,6 +21,8 @@ namespace acp {
 	
 	void cos_test();
 
+	void arg_test();
+
 	void tan_test();
 
 	void exp_test();
@@ -28,6 +30,12 @@ namespace acp {
 	void abs_test();
 
 	void conj_test();
+
+	void sqrt_test();
+
+	void log_test();
+
+	void pow_test();
 
 	void arithmetic_test();
 
