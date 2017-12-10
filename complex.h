@@ -9,8 +9,7 @@ namespace acp {
 	
 		public:
 		complex() {this->re = 0.0; this->im = 0.0;}
-		complex(double r) {this->re = r; this->im = 0.0;}
-		complex(double r, double i) {this->re = r; this->im = i;}
+		complex(double r, double i=0.0) {this->re = r; this->im = i;}
 
 		double get_re() const { return re; };
 		
@@ -35,6 +34,8 @@ namespace acp {
 		complex operator+(const complex& other) const;
 	
 		complex operator-(const complex& other) const;
+
+		complex operator-() const;
 	
 		complex& operator-=(const complex& other);
 	

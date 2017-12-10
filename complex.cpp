@@ -57,6 +57,10 @@ namespace acp {
 		return result;
 	}
 
+	complex complex::operator-() const {
+		return *this * complex(-1);
+	}
+
 	complex& complex::operator-=(const complex& other) {
 		*this = *this - other;
 		return *this;
