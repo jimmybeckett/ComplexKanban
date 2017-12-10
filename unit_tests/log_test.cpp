@@ -1,5 +1,4 @@
-#include "../../unit_tests.h"
-#include "../../exp_functions.h"
+#include "../unit_tests.h"
 
 namespace acp {
 	void log_test() {

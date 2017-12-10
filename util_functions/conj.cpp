@@ -1,4 +1,4 @@
-#include "../other_functions.h"
+#include "../util_functions.h"
 
 namespace acp {
 	complex conj(const complex other) {

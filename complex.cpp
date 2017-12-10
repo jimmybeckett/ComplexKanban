@@ -43,6 +43,11 @@ namespace acp {
 		return result;
 	}
 
+	complex& complex::operator+=(const complex& other) {
+		*this = *this + other;
+		return *this;
+	}
+
 	complex complex::operator-(const complex& other) const {
 		complex result;
 		result.re = this->re - other.re;
@@ -60,7 +65,7 @@ namespace acp {
 	}
 
 	bool complex::operator!=(const complex& other) {
-		return this->im != other.im || this->re != other.re;
+		return !(*this == other);
 	}
 
 	bool complex::operator<(const complex& other) {
@@ -68,20 +73,15 @@ namespace acp {
 	}
 
 	bool complex::operator>(const complex& other) {
-		return this->im > other.im && this->re > other.re;
+		return !(*this < other) && *this != other;
 	}
 
 	bool complex::operator>=(const complex& other) {
-		return this->im >= other.im && this->re >= other.re;
+		return *this > other || *this == other;
 	}
 
 	bool complex::operator<=(const complex& other) {
-		return this->im <= other.im && this->re <= other.re;
-	}
-
-	complex& complex::operator+=(const complex& other) {
-		*this = *this + other;
-		return *this;
+		return *this < other || *this == other.re;
 	}
 
 	std::ostream& operator<<(std::ostream& stream, const acp::complex& complex) {

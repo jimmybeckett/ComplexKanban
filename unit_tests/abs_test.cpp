@@ -1,5 +1,4 @@
-#include "../../unit_tests.h"
-#include "../../trig_functions.h"
+#include "../unit_tests.h"
 
 namespace acp {
 	void abs_test() {
@@ -11,4 +10,3 @@ namespace acp {
 		std::cout << "Abs tests passed!" << std::endl;
 	}
 }
-

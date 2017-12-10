@@ -1,5 +1,4 @@
-#include "../../unit_tests.h"
-#include "../../other_functions.h"
+#include "../unit_tests.h"
 
 namespace acp {
 	void arg_test() {

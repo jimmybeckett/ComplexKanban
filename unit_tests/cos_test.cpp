@@ -1,7 +1,4 @@
-#ifndef COS_TEST_HEADER
-#define COS_TEST_HEADER
-#include "../../unit_tests.h"
-#include "../../trig_functions.h"
+#include "../unit_tests.h"
 
 namespace acp {
 	void cos_test() {
@@ -13,5 +10,3 @@ namespace acp {
 		std::cout << "Cos tests passed!" << std::endl;
 	}
 }
-
-#endif

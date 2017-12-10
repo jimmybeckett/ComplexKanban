@@ -1,7 +1,4 @@
-#include "../other_functions.h"
 #include "../exp_functions.h"
-#define _USE_MATH_DEFINES 
-#include <math.h>
 
 namespace acp {
 	complex pow(const complex b, const complex exp) {

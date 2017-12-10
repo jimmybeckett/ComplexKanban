@@ -1,5 +1,4 @@
-#include "../other_functions.h"
-#include <math.h>
+#include "../util_functions.h"
 
 namespace acp {
 	double arg(const complex other) {

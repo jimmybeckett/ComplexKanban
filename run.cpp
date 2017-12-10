@@ -1,14 +1,17 @@
-#include <iostream>
 #include "unit_tests.h"
-#include "complex.h"
-#include "other_functions.h"
-#include "trig_functions.h"
-#include "exp_functions.h"
+#include <vector>
 
 int main(int argc, char** argv) {
 	using namespace acp;
-	std::vector<void(*)()> functions = { pow_test };
-	run_unit_tests(functions);
+
+	std::vector<void(*)()> all_test_functions = {abs_test, arg_test, arithmetic_test, conj_test, cos_test, exp_test, log_test, pow_test, sin_test, sqrt_test, tan_test};
+	std::vector<void(*)()> test_functions = {};
+		for (void(*tf)() : all_test_functions) {
+			tf();
+		}
+
+	//Shockey stuff!
+
 
 	//complex x(3, 3), y(4, 4);
 	//complex i(1, 1), j(2, 1);
@@ -48,21 +51,21 @@ int main(int argc, char** argv) {
 
 	//z = abs(x - y);
 
-	//std::cout << "x = " << x << ", y =" << y << ", z =" << z << std::endl;
+	//std::cout << "x = " << x << ", y = " << y << ", z = " << z << std::endl;
 
-	///*z = pow(j, 2);
+	//z = pow(j, 2);
 
 	//std::cout << "i = " << i << ", j = " << j << ", z = " << z << std::endl;
 
-	//if (j * j == z)
+	//if (in_range(z, j * j, error))
 	//	std::cout << "Correct pow(): " << z << " pow " << j << std::endl;
 	//else
-	//	std::cout << "Wrong pow(): " << z << " pow " << j << std::endl;*/
+	//	std::cout << "Wrong pow(): " << z << " pow " << (j * j) << std::endl;
 
 
-	////
-	//// Add additional tests for the specific funtions your team completed.
-	////
+	//////
+	////// Add additional tests for the specific functions your team completed.
+	//////
 
 	return 0;
 }

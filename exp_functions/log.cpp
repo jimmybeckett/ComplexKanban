@@ -1,6 +1,5 @@
 #include "../exp_functions.h"
-#include "../other_functions.h"
-#include <math.h>
+#include "../util_functions.h"
 
 namespace acp {
 	complex log(const complex other) {

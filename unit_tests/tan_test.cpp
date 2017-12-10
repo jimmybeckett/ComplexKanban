@@ -1,5 +1,4 @@
-#include "../../unit_tests.h"
-#include "../../trig_functions.h"
+#include "../unit_tests.h"
 
 namespace acp {
 	void tan_test() {

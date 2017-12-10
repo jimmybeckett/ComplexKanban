@@ -1,8 +1,8 @@
-#include "../../unit_tests.h"
+#include "../unit_tests.h"
 
 namespace acp {
 	void arithmetic_test() {
-		std::cout << "Running arithmetic unit tests..." << std::endl;
+		std::cout << "Running arithmetic tests..." << std::endl;
 		//addition
 		std::cout << "Running addition tests..." << std::endl;
 		assert(complex(5, 2) + complex(2, -5) == complex(7, -3));
