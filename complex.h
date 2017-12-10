@@ -45,14 +45,6 @@ namespace acp {
 
 		bool operator!=(const complex& other);
 
-		bool operator<(const complex& other);
-
-		bool operator>(const complex& other);
-
-		bool operator>=(const complex& other);
-
-		bool operator<=(const complex& other);
-
 		friend std::ostream& operator<<(std::ostream& stream, const complex& complex);
 
 		friend std::istream& operator>>(std::istream& stream, acp::complex& complex);
