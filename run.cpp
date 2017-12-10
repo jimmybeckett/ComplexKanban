@@ -6,8 +6,8 @@ int main(int argc, char** argv) {
 
 	std::vector<void(*)()> test_functions;
 	//All test functions
-	test_functions = {asin_test};
-	//test_functions = { abs_test, arg_test, arithmetic_test, conj_test, cos_test, exp_test, imag_test, log_test, log10_test, norm_test, pow_test, real_test, sin_test, sqrt_test, tan_test };
+	test_functions = { abs_test, arg_test, arithmetic_test, asin_test, conj_test, cos_test, exp_test, imag_test, log_test, log10_test, norm_test, polar_test, pow_test, real_test, sin_test, sqrt_test, tan_test };
+	//test_functions = { polar_test };
 	for (void(*tf)() : test_functions) {
 		tf();
 	}

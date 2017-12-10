@@ -9,4 +9,3 @@ namespace acp {
 		std::cout << "Norm tests passed!" << std::endl;
 	}
 }
-

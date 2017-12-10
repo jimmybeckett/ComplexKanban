@@ -41,6 +41,8 @@ namespace acp {
 	void log10_test();
 
 	void norm_test();
+
+	void polar_test();
 	
 	void pow_test();
 

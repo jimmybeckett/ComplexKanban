@@ -2,6 +2,6 @@
 
 namespace acp {
 	complex polar(double mag, double ang) {
-		return complex(0, 0); //not yet defined
+		return complex(mag * std::cos(ang), mag * std::sin(ang));
 	}
 }
