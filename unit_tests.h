@@ -31,10 +31,18 @@ namespace acp {
 	void cos_test();
 	
 	void exp_test();
+
+	void imag_test();
 	
 	void log_test();
+
+	void log10_test();
+
+	void norm_test();
 	
 	void pow_test();
+
+	void real_test();
 
 	void sin_test();
 

@@ -12,4 +12,3 @@ namespace acp {
 		std::cout << "Log tests passed!" << std::endl;
 	}
 }
-

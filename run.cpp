@@ -4,14 +4,17 @@
 int main(int argc, char** argv) {
 	using namespace acp;
 
-	std::vector<void(*)()> all_test_functions = {abs_test, arg_test, arithmetic_test, conj_test, cos_test, exp_test, log_test, pow_test, sin_test, sqrt_test, tan_test};
-	std::vector<void(*)()> test_functions = {};
-		for (void(*tf)() : all_test_functions) {
-			tf();
-		}
+	std::vector<void(*)()> test_functions;
+	//All test functions
+	//test_functions = {log10_test};
+	test_functions = { abs_test, arg_test, arithmetic_test, conj_test, cos_test, exp_test, imag_test, log_test, log10_test, norm_test, pow_test, real_test, sin_test, sqrt_test, tan_test };
+	for (void(*tf)() : test_functions) {
+		tf();
+	}
+	std::cout << test_functions.size() << " tests run, all tests passed!" << std::endl;
 
-	//Shockey stuff!
 
+	//Shockey stuff from here down
 
 	//complex x(3, 3), y(4, 4);
 	//complex i(1, 1), j(2, 1);
