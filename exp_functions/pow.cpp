@@ -22,6 +22,10 @@ namespace acp {
 
 namespace acp {
 	complex pow(const complex b, const int exp) {
-		return pow(b, (double)exp);
+		complex temp = b;
+		for (int i = 0; i < exp - 1; i++) {
+			temp *= b;
+		}
+		return temp;
 	}
 }

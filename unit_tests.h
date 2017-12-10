@@ -21,16 +21,22 @@ namespace acp {
 	}
 
 	void abs_test();
+
+	void acos_test();
 	
 	void arg_test();
 	
 	void arithmetic_test();
 
 	void asin_test();
+
+	void atan_test();
 	
 	void conj_test();
 	
 	void cos_test();
+
+	void cosh_test();
 	
 	void exp_test();
 
@@ -50,9 +56,13 @@ namespace acp {
 
 	void sin_test();
 
+	void sinh_test();
+
 	void sqrt_test();
 
 	void tan_test();
+
+	void tanh_test();
 }
 
 #endif
