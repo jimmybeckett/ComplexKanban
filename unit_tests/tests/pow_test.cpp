@@ -1,0 +1,14 @@
+#include "../../unit_tests.h"
+#include "../../exp_functions.h"
+#include "../../other_functions.h"
+
+namespace acp {
+	void pow_test() {
+		std::cout << "Running pow tests..." << std::endl;
+		assert(in_range(pow(complex(2, 3), complex(4, 5)), complex(-0.7530458, -0.9864287), complex_error));
+		assert(in_range(pow(complex(6.825, 5.654), complex(1.234, 2.876)), complex(1.3393532, 1.5110442), complex_error));
+		assert(in_range(pow(complex(7, 1.8), complex(-2.8, -2.223)), complex(0.0026122, 0.0063681), complex_error));
+		assert(in_range(pow(complex(-3.52, -1.54), complex(-3, 2.987)), complex(57.3053654, -21.4546935), complex_error));
+		std::cout << "Pow tests passed!" << std::endl;
+	}
+}

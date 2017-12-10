@@ -8,11 +8,11 @@ namespace acp {
 
 	double abs(const complex);
 
-	complex arg(const complex);
+	double arg(const complex);
 
 	complex conj(const complex);
 
-	double imag(const complex&);
+	double imag(const complex);
 
 	double norm(const complex);
 
@@ -20,7 +20,7 @@ namespace acp {
 
 	polar_t polar(const complex);
 
-	double real(const complex&);
+	double real(const complex);
 }
 
 #endif
