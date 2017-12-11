@@ -25,11 +25,11 @@ namespace acp {
 
 		complex operator/(const complex& other) const;
 
-		complex operator/=(const complex& other);
+		void operator/=(const complex& other);
 	
 		complex operator*(const complex& other) const;
 	
-		complex& operator*=(const complex& other);
+		void operator*=(const complex& other);
 	
 		complex operator+(const complex& other) const;
 	
@@ -37,9 +37,9 @@ namespace acp {
 
 		complex operator-() const;
 	
-		complex& operator-=(const complex& other);
+		void operator-=(const complex& other);
 	
-		complex& operator+=(const complex& other);
+		void operator+=(const complex& other);
 
 		bool operator==(const complex& other);
 

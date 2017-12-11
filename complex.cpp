@@ -28,14 +28,12 @@ namespace acp {
 		return result;
 	}
 
-	complex complex::operator/=(const complex& other) {
+	void complex::operator/=(const complex& other) {
 		*this = *this / other;
-		return *this;
 	}
 	
-	complex& complex::operator*=(const complex& other) {
+	void complex::operator*=(const complex& other) {
 		*this = *this * other;
-		return *this;
 	}
 		
 	complex complex::operator+(const complex& other) const {
@@ -45,9 +43,8 @@ namespace acp {
 		return result;
 	}
 
-	complex& complex::operator+=(const complex& other) {
+	void complex::operator+=(const complex& other) {
 		*this = *this + other;
-		return *this;
 	}
 
 	complex complex::operator-(const complex& other) const {
@@ -61,9 +58,8 @@ namespace acp {
 		return *this * complex(-1);
 	}
 
-	complex& complex::operator-=(const complex& other) {
+	void complex::operator-=(const complex& other) {
 		*this = *this - other;
-		return *this;
 	}
 
 	bool complex::operator==(const complex& other) {
