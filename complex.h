@@ -1,6 +1,5 @@
 #ifndef COMPLEX_HEADER
 #define COMPLEX_HEADER
-
 #include <iostream>
 
 namespace acp {
@@ -18,8 +17,6 @@ namespace acp {
 		void set_re(double re) { this->re = re; };
 
 		void set_im(double im) { this->im = im; };
-	
-		complex(const complex& other);
 	
 		complex& operator=(const complex& other);
 
