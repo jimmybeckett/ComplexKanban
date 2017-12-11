@@ -6,6 +6,7 @@
 #include "exp_functions.h"
 #include <iostream>
 #include <cassert>
+#include <math.h>
 
 namespace acp {
 	const double error = 0.0000001;
