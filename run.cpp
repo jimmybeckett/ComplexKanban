@@ -12,6 +12,7 @@ int main(int argc, char** argv) {
 		tf();
 	}
 	std::cout << test_functions.size() << " test type" << (test_functions.size() != 1 ? "s" : "") << " ran, all tests passed!" << std::endl;
+	std::cout << "IT BOTH BUILD AND RUN!" << std::endl;
 
 	//Shockey stuff from here down
 

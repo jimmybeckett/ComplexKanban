@@ -1,0 +1,1695 @@
+Building program... Copyright HP 15C 2017
+In file included from run.cpp:1:0:
+unit_tests.h: In function ‘bool acp::in_range(double, double, double)’:
+unit_tests.h:21:24: error: call of overloaded ‘abs(double)’ is ambiguous
+   return std::abs(a - b) < error;
+                        ^
+unit_tests.h:21:24: note: candidates are:
+In file included from /usr/include/c++/4.8/cstdlib:72:0,
+                 from /usr/include/c++/4.8/ext/string_conversions.h:41,
+                 from /usr/include/c++/4.8/bits/basic_string.h:2815,
+                 from /usr/include/c++/4.8/string:52,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from complex.h:3,
+                 from unit_tests.h:3,
+                 from run.cpp:1:
+/usr/include/stdlib.h:775:12: note: int abs(int)
+ extern int abs (int __x) __THROW __attribute__ ((__const__)) __wur;
+            ^
+In file included from /usr/include/c++/4.8/ext/string_conversions.h:41:0,
+                 from /usr/include/c++/4.8/bits/basic_string.h:2815,
+                 from /usr/include/c++/4.8/string:52,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from complex.h:3,
+                 from unit_tests.h:3,
+                 from run.cpp:1:
+/usr/include/c++/4.8/cstdlib:166:3: note: long int std::abs(long int)
+   abs(long __i) { return __builtin_labs(__i); }
+   ^
+/usr/include/c++/4.8/cstdlib:174:3: note: long long int std::abs(long long int)
+   abs(long long __x) { return __builtin_llabs (__x); }
+   ^
+trig_functions/cos.cpp: In function ‘acp::complex acp::cos(acp::complex)’:
+trig_functions/cos.cpp:6:15: error: ‘cos’ is not a member of ‘std’
+   temp.set_re(std::cos(c.get_re()) * std::cosh(-c.get_im()));
+               ^
+trig_functions/cos.cpp:6:15: note: suggested alternatives:
+In file included from /usr/include/features.h:374:0,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/os_defines.h:39,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/c++config.h:426,
+                 from /usr/include/c++/4.8/iostream:38,
+                 from trig_functions/../complex.h:3,
+                 from trig_functions/../trig_functions.h:3,
+                 from trig_functions/cos.cpp:1:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:63:1: note:   ‘cos’
+ __MATHCALL (cos,, (_Mdouble_ __x));
+ ^
+trig_functions/cos.cpp:4:10: note:   ‘acp::cos’
+  complex cos(const complex c) {
+          ^
+trig_functions/cos.cpp:6:38: error: ‘cosh’ is not a member of ‘std’
+   temp.set_re(std::cos(c.get_re()) * std::cosh(-c.get_im()));
+                                      ^
+trig_functions/cos.cpp:6:38: note: suggested alternatives:
+In file included from /usr/include/features.h:374:0,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/os_defines.h:39,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/c++config.h:426,
+                 from /usr/include/c++/4.8/iostream:38,
+                 from trig_functions/../complex.h:3,
+                 from trig_functions/../trig_functions.h:3,
+                 from trig_functions/cos.cpp:1:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:72:1: note:   ‘cosh’
+ __MATHCALL (cosh,, (_Mdouble_ __x));
+ ^
+In file included from trig_functions/cos.cpp:1:0:
+trig_functions/../trig_functions.h:22:10: note:   ‘acp::cosh’
+  complex cosh(const complex);
+          ^
+trig_functions/cos.cpp:7:15: error: ‘sin’ is not a member of ‘std’
+   temp.set_im(std::sin(c.get_re()) * std::sinh(-c.get_im()));
+               ^
+trig_functions/cos.cpp:7:15: note: suggested alternatives:
+In file included from /usr/include/features.h:374:0,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/os_defines.h:39,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/c++config.h:426,
+                 from /usr/include/c++/4.8/iostream:38,
+                 from trig_functions/../complex.h:3,
+                 from trig_functions/../trig_functions.h:3,
+                 from trig_functions/cos.cpp:1:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:65:1: note:   ‘sin’
+ __MATHCALL (sin,, (_Mdouble_ __x));
+ ^
+In file included from trig_functions/cos.cpp:1:0:
+trig_functions/../trig_functions.h:8:10: note:   ‘acp::sin’
+  complex sin(const complex);
+          ^
+trig_functions/cos.cpp:7:38: error: ‘sinh’ is not a member of ‘std’
+   temp.set_im(std::sin(c.get_re()) * std::sinh(-c.get_im()));
+                                      ^
+trig_functions/cos.cpp:7:38: note: suggested alternatives:
+In file included from /usr/include/features.h:374:0,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/os_defines.h:39,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/c++config.h:426,
+                 from /usr/include/c++/4.8/iostream:38,
+                 from trig_functions/../complex.h:3,
+                 from trig_functions/../trig_functions.h:3,
+                 from trig_functions/cos.cpp:1:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:74:1: note:   ‘sinh’
+ __MATHCALL (sinh,, (_Mdouble_ __x));
+ ^
+In file included from trig_functions/cos.cpp:1:0:
+trig_functions/../trig_functions.h:20:10: note:   ‘acp::sinh’
+  complex sinh(const complex);
+          ^
+trig_functions/cosh.cpp: In function ‘acp::complex acp::cosh(acp::complex)’:
+trig_functions/cosh.cpp:5:18: error: ‘cosh’ is not a member of ‘std’
+   return complex(std::cosh(c.get_re()) * std::cos(c.get_im()), std::sinh(c.get_re()) * std::sin(c.get_im()));
+                  ^
+trig_functions/cosh.cpp:5:18: note: suggested alternatives:
+In file included from /usr/include/features.h:374:0,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/os_defines.h:39,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/c++config.h:426,
+                 from /usr/include/c++/4.8/iostream:38,
+                 from trig_functions/../complex.h:3,
+                 from trig_functions/../trig_functions.h:3,
+                 from trig_functions/cosh.cpp:1:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:72:1: note:   ‘cosh’
+ __MATHCALL (cosh,, (_Mdouble_ __x));
+ ^
+trig_functions/cosh.cpp:4:10: note:   ‘acp::cosh’
+  complex cosh(const complex c) {
+          ^
+trig_functions/cosh.cpp:5:42: error: ‘cos’ is not a member of ‘std’
+   return complex(std::cosh(c.get_re()) * std::cos(c.get_im()), std::sinh(c.get_re()) * std::sin(c.get_im()));
+                                          ^
+trig_functions/cosh.cpp:5:42: note: suggested alternatives:
+In file included from /usr/include/features.h:374:0,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/os_defines.h:39,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/c++config.h:426,
+                 from /usr/include/c++/4.8/iostream:38,
+                 from trig_functions/../complex.h:3,
+                 from trig_functions/../trig_functions.h:3,
+                 from trig_functions/cosh.cpp:1:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:63:1: note:   ‘cos’
+ __MATHCALL (cos,, (_Mdouble_ __x));
+ ^
+In file included from trig_functions/cosh.cpp:1:0:
+trig_functions/../trig_functions.h:10:10: note:   ‘acp::cos’
+  complex cos(const complex);
+          ^
+trig_functions/cosh.cpp:5:64: error: ‘sinh’ is not a member of ‘std’
+   return complex(std::cosh(c.get_re()) * std::cos(c.get_im()), std::sinh(c.get_re()) * std::sin(c.get_im()));
+                                                                ^
+trig_functions/cosh.cpp:5:64: note: suggested alternatives:
+In file included from /usr/include/features.h:374:0,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/os_defines.h:39,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/c++config.h:426,
+                 from /usr/include/c++/4.8/iostream:38,
+                 from trig_functions/../complex.h:3,
+                 from trig_functions/../trig_functions.h:3,
+                 from trig_functions/cosh.cpp:1:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:74:1: note:   ‘sinh’
+ __MATHCALL (sinh,, (_Mdouble_ __x));
+ ^
+In file included from trig_functions/cosh.cpp:1:0:
+trig_functions/../trig_functions.h:20:10: note:   ‘acp::sinh’
+  complex sinh(const complex);
+          ^
+trig_functions/cosh.cpp:5:88: error: ‘sin’ is not a member of ‘std’
+   return complex(std::cosh(c.get_re()) * std::cos(c.get_im()), std::sinh(c.get_re()) * std::sin(c.get_im()));
+                                                                                        ^
+trig_functions/cosh.cpp:5:88: note: suggested alternatives:
+In file included from /usr/include/features.h:374:0,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/os_defines.h:39,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/c++config.h:426,
+                 from /usr/include/c++/4.8/iostream:38,
+                 from trig_functions/../complex.h:3,
+                 from trig_functions/../trig_functions.h:3,
+                 from trig_functions/cosh.cpp:1:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:65:1: note:   ‘sin’
+ __MATHCALL (sin,, (_Mdouble_ __x));
+ ^
+In file included from trig_functions/cosh.cpp:1:0:
+trig_functions/../trig_functions.h:8:10: note:   ‘acp::sin’
+  complex sin(const complex);
+          ^
+trig_functions/cosh.cpp:6:2: error: control reaches end of non-void function [-Werror=return-type]
+  }
+  ^
+cc1plus: all warnings being treated as errors
+trig_functions/sin.cpp: In function ‘acp::complex acp::sin(acp::complex)’:
+trig_functions/sin.cpp:6:15: error: ‘sin’ is not a member of ‘std’
+   temp.set_re(std::sin(c.get_re()) * std::cosh(-c.get_im()));
+               ^
+trig_functions/sin.cpp:6:15: note: suggested alternatives:
+In file included from /usr/include/features.h:374:0,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/os_defines.h:39,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/c++config.h:426,
+                 from /usr/include/c++/4.8/iostream:38,
+                 from trig_functions/../complex.h:3,
+                 from trig_functions/../trig_functions.h:3,
+                 from trig_functions/sin.cpp:1:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:65:1: note:   ‘sin’
+ __MATHCALL (sin,, (_Mdouble_ __x));
+ ^
+trig_functions/sin.cpp:4:10: note:   ‘acp::sin’
+  complex sin(const complex c) {
+          ^
+trig_functions/sin.cpp:6:38: error: ‘cosh’ is not a member of ‘std’
+   temp.set_re(std::sin(c.get_re()) * std::cosh(-c.get_im()));
+                                      ^
+trig_functions/sin.cpp:6:38: note: suggested alternatives:
+In file included from /usr/include/features.h:374:0,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/os_defines.h:39,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/c++config.h:426,
+                 from /usr/include/c++/4.8/iostream:38,
+                 from trig_functions/../complex.h:3,
+                 from trig_functions/../trig_functions.h:3,
+                 from trig_functions/sin.cpp:1:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:72:1: note:   ‘cosh’
+ __MATHCALL (cosh,, (_Mdouble_ __x));
+ ^
+In file included from trig_functions/sin.cpp:1:0:
+trig_functions/../trig_functions.h:22:10: note:   ‘acp::cosh’
+  complex cosh(const complex);
+          ^
+trig_functions/sin.cpp:7:16: error: ‘cos’ is not a member of ‘std’
+   temp.set_im(-std::cos(c.get_re()) * std::sinh(-c.get_im()));
+                ^
+trig_functions/sin.cpp:7:16: note: suggested alternatives:
+In file included from /usr/include/features.h:374:0,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/os_defines.h:39,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/c++config.h:426,
+                 from /usr/include/c++/4.8/iostream:38,
+                 from trig_functions/../complex.h:3,
+                 from trig_functions/../trig_functions.h:3,
+                 from trig_functions/sin.cpp:1:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:63:1: note:   ‘cos’
+ __MATHCALL (cos,, (_Mdouble_ __x));
+ ^
+In file included from trig_functions/sin.cpp:1:0:
+trig_functions/../trig_functions.h:10:10: note:   ‘acp::cos’
+  complex cos(const complex);
+          ^
+trig_functions/sin.cpp:7:39: error: ‘sinh’ is not a member of ‘std’
+   temp.set_im(-std::cos(c.get_re()) * std::sinh(-c.get_im()));
+                                       ^
+trig_functions/sin.cpp:7:39: note: suggested alternatives:
+In file included from /usr/include/features.h:374:0,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/os_defines.h:39,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/c++config.h:426,
+                 from /usr/include/c++/4.8/iostream:38,
+                 from trig_functions/../complex.h:3,
+                 from trig_functions/../trig_functions.h:3,
+                 from trig_functions/sin.cpp:1:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:74:1: note:   ‘sinh’
+ __MATHCALL (sinh,, (_Mdouble_ __x));
+ ^
+In file included from trig_functions/sin.cpp:1:0:
+trig_functions/../trig_functions.h:20:10: note:   ‘acp::sinh’
+  complex sinh(const complex);
+          ^
+trig_functions/sinh.cpp: In function ‘acp::complex acp::sinh(acp::complex)’:
+trig_functions/sinh.cpp:5:18: error: ‘sinh’ is not a member of ‘std’
+   return complex(std::sinh(c.get_re()) * std::cos(c.get_im()), std::cosh(c.get_re()) * std::sin(c.get_im()));
+                  ^
+trig_functions/sinh.cpp:5:18: note: suggested alternatives:
+In file included from /usr/include/features.h:374:0,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/os_defines.h:39,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/c++config.h:426,
+                 from /usr/include/c++/4.8/iostream:38,
+                 from trig_functions/../complex.h:3,
+                 from trig_functions/../trig_functions.h:3,
+                 from trig_functions/sinh.cpp:1:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:74:1: note:   ‘sinh’
+ __MATHCALL (sinh,, (_Mdouble_ __x));
+ ^
+trig_functions/sinh.cpp:4:10: note:   ‘acp::sinh’
+  complex sinh(const complex c) {
+          ^
+trig_functions/sinh.cpp:5:42: error: ‘cos’ is not a member of ‘std’
+   return complex(std::sinh(c.get_re()) * std::cos(c.get_im()), std::cosh(c.get_re()) * std::sin(c.get_im()));
+                                          ^
+trig_functions/sinh.cpp:5:42: note: suggested alternatives:
+In file included from /usr/include/features.h:374:0,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/os_defines.h:39,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/c++config.h:426,
+                 from /usr/include/c++/4.8/iostream:38,
+                 from trig_functions/../complex.h:3,
+                 from trig_functions/../trig_functions.h:3,
+                 from trig_functions/sinh.cpp:1:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:63:1: note:   ‘cos’
+ __MATHCALL (cos,, (_Mdouble_ __x));
+ ^
+In file included from trig_functions/sinh.cpp:1:0:
+trig_functions/../trig_functions.h:10:10: note:   ‘acp::cos’
+  complex cos(const complex);
+          ^
+trig_functions/sinh.cpp:5:64: error: ‘cosh’ is not a member of ‘std’
+   return complex(std::sinh(c.get_re()) * std::cos(c.get_im()), std::cosh(c.get_re()) * std::sin(c.get_im()));
+                                                                ^
+trig_functions/sinh.cpp:5:64: note: suggested alternatives:
+In file included from /usr/include/features.h:374:0,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/os_defines.h:39,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/c++config.h:426,
+                 from /usr/include/c++/4.8/iostream:38,
+                 from trig_functions/../complex.h:3,
+                 from trig_functions/../trig_functions.h:3,
+                 from trig_functions/sinh.cpp:1:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:72:1: note:   ‘cosh’
+ __MATHCALL (cosh,, (_Mdouble_ __x));
+ ^
+In file included from trig_functions/sinh.cpp:1:0:
+trig_functions/../trig_functions.h:22:10: note:   ‘acp::cosh’
+  complex cosh(const complex);
+          ^
+trig_functions/sinh.cpp:5:88: error: ‘sin’ is not a member of ‘std’
+   return complex(std::sinh(c.get_re()) * std::cos(c.get_im()), std::cosh(c.get_re()) * std::sin(c.get_im()));
+                                                                                        ^
+trig_functions/sinh.cpp:5:88: note: suggested alternatives:
+In file included from /usr/include/features.h:374:0,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/os_defines.h:39,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/c++config.h:426,
+                 from /usr/include/c++/4.8/iostream:38,
+                 from trig_functions/../complex.h:3,
+                 from trig_functions/../trig_functions.h:3,
+                 from trig_functions/sinh.cpp:1:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:65:1: note:   ‘sin’
+ __MATHCALL (sin,, (_Mdouble_ __x));
+ ^
+In file included from trig_functions/sinh.cpp:1:0:
+trig_functions/../trig_functions.h:8:10: note:   ‘acp::sin’
+  complex sin(const complex);
+          ^
+trig_functions/sinh.cpp:6:2: error: control reaches end of non-void function [-Werror=return-type]
+  }
+  ^
+cc1plus: all warnings being treated as errors
+trig_functions/tan.cpp: In function ‘acp::complex acp::tan(acp::complex)’:
+trig_functions/tan.cpp:5:18: error: ‘tan’ is not a member of ‘std’
+   complex temp1{ std::tan(c.get_re()), -std::tanh(-c.get_im()) };
+                  ^
+trig_functions/tan.cpp:5:18: note: suggested alternatives:
+In file included from /usr/include/features.h:374:0,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/os_defines.h:39,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/c++config.h:426,
+                 from /usr/include/c++/4.8/iostream:38,
+                 from trig_functions/../complex.h:3,
+                 from trig_functions/../trig_functions.h:3,
+                 from trig_functions/tan.cpp:1:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:67:1: note:   ‘tan’
+ __MATHCALL (tan,, (_Mdouble_ __x));
+ ^
+trig_functions/tan.cpp:4:10: note:   ‘acp::tan’
+  complex tan(const complex c) {
+          ^
+trig_functions/tan.cpp:5:41: error: ‘tanh’ is not a member of ‘std’
+   complex temp1{ std::tan(c.get_re()), -std::tanh(-c.get_im()) };
+                                         ^
+trig_functions/tan.cpp:5:41: note: suggested alternatives:
+In file included from /usr/include/features.h:374:0,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/os_defines.h:39,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/c++config.h:426,
+                 from /usr/include/c++/4.8/iostream:38,
+                 from trig_functions/../complex.h:3,
+                 from trig_functions/../trig_functions.h:3,
+                 from trig_functions/tan.cpp:1:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:76:1: note:   ‘tanh’
+ __MATHCALL (tanh,, (_Mdouble_ __x));
+ ^
+In file included from trig_functions/tan.cpp:1:0:
+trig_functions/../trig_functions.h:24:10: note:   ‘acp::tanh’
+  complex tanh(const complex);
+          ^
+trig_functions/tan.cpp:5:64: error: no matching function for call to ‘acp::complex::complex(<brace-enclosed initializer list>)’
+   complex temp1{ std::tan(c.get_re()), -std::tanh(-c.get_im()) };
+                                                                ^
+trig_functions/tan.cpp:5:64: note: candidates are:
+In file included from trig_functions/../trig_functions.h:3:0,
+                 from trig_functions/tan.cpp:1:
+trig_functions/../complex.h:11:3: note: acp::complex::complex(double, double)
+   complex(double r, double i=0.0) {this->re = r; this->im = i;}
+   ^
+trig_functions/../complex.h:11:3: note:   no known conversion for argument 1 from ‘<type error>’ to ‘double’
+trig_functions/../complex.h:10:3: note: acp::complex::complex()
+   complex() {this->re = 0.0; this->im = 0.0;}
+   ^
+trig_functions/../complex.h:10:3: note:   candidate expects 0 arguments, 2 provided
+trig_functions/../complex.h:6:8: note: constexpr acp::complex::complex(const acp::complex&)
+  class complex {
+        ^
+trig_functions/../complex.h:6:8: note:   candidate expects 1 argument, 2 provided
+trig_functions/tan.cpp:6:20: error: ‘tan’ is not a member of ‘std’
+   complex temp2{1, std::tan(c.get_re()) * std::tanh(-c.get_im()) };
+                    ^
+trig_functions/tan.cpp:6:20: note: suggested alternatives:
+In file included from /usr/include/features.h:374:0,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/os_defines.h:39,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/c++config.h:426,
+                 from /usr/include/c++/4.8/iostream:38,
+                 from trig_functions/../complex.h:3,
+                 from trig_functions/../trig_functions.h:3,
+                 from trig_functions/tan.cpp:1:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:67:1: note:   ‘tan’
+ __MATHCALL (tan,, (_Mdouble_ __x));
+ ^
+trig_functions/tan.cpp:4:10: note:   ‘acp::tan’
+  complex tan(const complex c) {
+          ^
+trig_functions/tan.cpp:6:43: error: ‘tanh’ is not a member of ‘std’
+   complex temp2{1, std::tan(c.get_re()) * std::tanh(-c.get_im()) };
+                                           ^
+trig_functions/tan.cpp:6:43: note: suggested alternatives:
+In file included from /usr/include/features.h:374:0,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/os_defines.h:39,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/c++config.h:426,
+                 from /usr/include/c++/4.8/iostream:38,
+                 from trig_functions/../complex.h:3,
+                 from trig_functions/../trig_functions.h:3,
+                 from trig_functions/tan.cpp:1:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:76:1: note:   ‘tanh’
+ __MATHCALL (tanh,, (_Mdouble_ __x));
+ ^
+In file included from trig_functions/tan.cpp:1:0:
+trig_functions/../trig_functions.h:24:10: note:   ‘acp::tanh’
+  complex tanh(const complex);
+          ^
+trig_functions/tan.cpp:6:66: error: no matching function for call to ‘acp::complex::complex(<brace-enclosed initializer list>)’
+   complex temp2{1, std::tan(c.get_re()) * std::tanh(-c.get_im()) };
+                                                                  ^
+trig_functions/tan.cpp:6:66: note: candidates are:
+In file included from trig_functions/../trig_functions.h:3:0,
+                 from trig_functions/tan.cpp:1:
+trig_functions/../complex.h:11:3: note: acp::complex::complex(double, double)
+   complex(double r, double i=0.0) {this->re = r; this->im = i;}
+   ^
+trig_functions/../complex.h:11:3: note:   no known conversion for argument 2 from ‘<type error>’ to ‘double’
+trig_functions/../complex.h:10:3: note: acp::complex::complex()
+   complex() {this->re = 0.0; this->im = 0.0;}
+   ^
+trig_functions/../complex.h:10:3: note:   candidate expects 0 arguments, 2 provided
+trig_functions/../complex.h:6:8: note: constexpr acp::complex::complex(const acp::complex&)
+  class complex {
+        ^
+trig_functions/../complex.h:6:8: note:   candidate expects 1 argument, 2 provided
+trig_functions/tanh.cpp: In function ‘acp::complex acp::tanh(acp::complex)’:
+trig_functions/tanh.cpp:5:18: error: ‘tanh’ is not a member of ‘std’
+   return complex(std::tanh(c.get_re()), std::tan(c.get_im())) / complex(1, std::tanh(c.get_re()) * std::tan(c.get_im()));
+                  ^
+trig_functions/tanh.cpp:5:18: note: suggested alternatives:
+In file included from /usr/include/features.h:374:0,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/os_defines.h:39,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/c++config.h:426,
+                 from /usr/include/c++/4.8/iostream:38,
+                 from trig_functions/../complex.h:3,
+                 from trig_functions/../trig_functions.h:3,
+                 from trig_functions/tanh.cpp:1:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:76:1: note:   ‘tanh’
+ __MATHCALL (tanh,, (_Mdouble_ __x));
+ ^
+trig_functions/tanh.cpp:4:10: note:   ‘acp::tanh’
+  complex tanh(const complex c) {
+          ^
+trig_functions/tanh.cpp:5:41: error: ‘tan’ is not a member of ‘std’
+   return complex(std::tanh(c.get_re()), std::tan(c.get_im())) / complex(1, std::tanh(c.get_re()) * std::tan(c.get_im()));
+                                         ^
+trig_functions/tanh.cpp:5:41: note: suggested alternatives:
+In file included from /usr/include/features.h:374:0,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/os_defines.h:39,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/c++config.h:426,
+                 from /usr/include/c++/4.8/iostream:38,
+                 from trig_functions/../complex.h:3,
+                 from trig_functions/../trig_functions.h:3,
+                 from trig_functions/tanh.cpp:1:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:67:1: note:   ‘tan’
+ __MATHCALL (tan,, (_Mdouble_ __x));
+ ^
+In file included from trig_functions/tanh.cpp:1:0:
+trig_functions/../trig_functions.h:12:10: note:   ‘acp::tan’
+  complex tan(const complex);
+          ^
+trig_functions/tanh.cpp:5:76: error: ‘tanh’ is not a member of ‘std’
+   return complex(std::tanh(c.get_re()), std::tan(c.get_im())) / complex(1, std::tanh(c.get_re()) * std::tan(c.get_im()));
+                                                                            ^
+trig_functions/tanh.cpp:5:76: note: suggested alternatives:
+In file included from /usr/include/features.h:374:0,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/os_defines.h:39,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/c++config.h:426,
+                 from /usr/include/c++/4.8/iostream:38,
+                 from trig_functions/../complex.h:3,
+                 from trig_functions/../trig_functions.h:3,
+                 from trig_functions/tanh.cpp:1:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:76:1: note:   ‘tanh’
+ __MATHCALL (tanh,, (_Mdouble_ __x));
+ ^
+trig_functions/tanh.cpp:4:10: note:   ‘acp::tanh’
+  complex tanh(const complex c) {
+          ^
+trig_functions/tanh.cpp:5:100: error: ‘tan’ is not a member of ‘std’
+   return complex(std::tanh(c.get_re()), std::tan(c.get_im())) / complex(1, std::tanh(c.get_re()) * std::tan(c.get_im()));
+                                                                                                    ^
+trig_functions/tanh.cpp:5:100: note: suggested alternatives:
+In file included from /usr/include/features.h:374:0,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/os_defines.h:39,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/c++config.h:426,
+                 from /usr/include/c++/4.8/iostream:38,
+                 from trig_functions/../complex.h:3,
+                 from trig_functions/../trig_functions.h:3,
+                 from trig_functions/tanh.cpp:1:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:67:1: note:   ‘tan’
+ __MATHCALL (tan,, (_Mdouble_ __x));
+ ^
+In file included from trig_functions/tanh.cpp:1:0:
+trig_functions/../trig_functions.h:12:10: note:   ‘acp::tan’
+  complex tan(const complex);
+          ^
+trig_functions/tanh.cpp:6:2: error: control reaches end of non-void function [-Werror=return-type]
+  }
+  ^
+cc1plus: all warnings being treated as errors
+exp_functions/exp.cpp: In function ‘acp::complex acp::exp(acp::complex)’:
+exp_functions/exp.cpp:6:15: error: ‘exp’ is not a member of ‘std’
+   temp.set_re(std::exp(c.get_re()) * std::cos(c.get_im()));
+               ^
+exp_functions/exp.cpp:6:15: note: suggested alternatives:
+In file included from /usr/include/features.h:374:0,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/os_defines.h:39,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/c++config.h:426,
+                 from /usr/include/c++/4.8/iostream:38,
+                 from exp_functions/../complex.h:3,
+                 from exp_functions/../exp_functions.h:3,
+                 from exp_functions/exp.cpp:1:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:100:1: note:   ‘exp’
+ __MATHCALL (exp,, (_Mdouble_ __x));
+ ^
+exp_functions/exp.cpp:4:10: note:   ‘acp::exp’
+  complex exp(const complex c) {
+          ^
+exp_functions/exp.cpp:6:38: error: ‘cos’ is not a member of ‘std’
+   temp.set_re(std::exp(c.get_re()) * std::cos(c.get_im()));
+                                      ^
+exp_functions/exp.cpp:6:38: note: suggested alternative:
+In file included from /usr/include/features.h:374:0,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/os_defines.h:39,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/c++config.h:426,
+                 from /usr/include/c++/4.8/iostream:38,
+                 from exp_functions/../complex.h:3,
+                 from exp_functions/../exp_functions.h:3,
+                 from exp_functions/exp.cpp:1:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:63:1: note:   ‘cos’
+ __MATHCALL (cos,, (_Mdouble_ __x));
+ ^
+exp_functions/exp.cpp:7:15: error: ‘exp’ is not a member of ‘std’
+   temp.set_im(std::exp(c.get_re()) * std::sin(c.get_im()));
+               ^
+exp_functions/exp.cpp:7:15: note: suggested alternatives:
+In file included from /usr/include/features.h:374:0,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/os_defines.h:39,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/c++config.h:426,
+                 from /usr/include/c++/4.8/iostream:38,
+                 from exp_functions/../complex.h:3,
+                 from exp_functions/../exp_functions.h:3,
+                 from exp_functions/exp.cpp:1:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:100:1: note:   ‘exp’
+ __MATHCALL (exp,, (_Mdouble_ __x));
+ ^
+exp_functions/exp.cpp:4:10: note:   ‘acp::exp’
+  complex exp(const complex c) {
+          ^
+exp_functions/exp.cpp:7:38: error: ‘sin’ is not a member of ‘std’
+   temp.set_im(std::exp(c.get_re()) * std::sin(c.get_im()));
+                                      ^
+exp_functions/exp.cpp:7:38: note: suggested alternative:
+In file included from /usr/include/features.h:374:0,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/os_defines.h:39,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/c++config.h:426,
+                 from /usr/include/c++/4.8/iostream:38,
+                 from exp_functions/../complex.h:3,
+                 from exp_functions/../exp_functions.h:3,
+                 from exp_functions/exp.cpp:1:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:65:1: note:   ‘sin’
+ __MATHCALL (sin,, (_Mdouble_ __x));
+ ^
+exp_functions/log.cpp: In function ‘acp::complex acp::log(acp::complex)’:
+exp_functions/log.cpp:7:15: error: ‘log’ is not a member of ‘std’
+   temp.set_re(std::log(abs(other)));
+               ^
+exp_functions/log.cpp:7:15: note: suggested alternatives:
+In file included from /usr/include/features.h:374:0,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/os_defines.h:39,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/c++config.h:426,
+                 from /usr/include/c++/4.8/iostream:38,
+                 from exp_functions/../complex.h:3,
+                 from exp_functions/../exp_functions.h:3,
+                 from exp_functions/log.cpp:1:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:109:1: note:   ‘log’
+ __MATHCALL (log,, (_Mdouble_ __x));
+ ^
+exp_functions/log.cpp:5:10: note:   ‘acp::log’
+  complex log(const complex other) {
+          ^
+exp_functions/log10.cpp: In function ‘acp::complex acp::log10(acp::complex)’:
+exp_functions/log10.cpp:6:23: error: ‘log’ is not a member of ‘std’
+   return log(other) / std::log(10);
+                       ^
+exp_functions/log10.cpp:6:23: note: suggested alternatives:
+In file included from /usr/include/features.h:374:0,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/os_defines.h:39,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/c++config.h:426,
+                 from /usr/include/c++/4.8/iostream:38,
+                 from exp_functions/../complex.h:3,
+                 from exp_functions/../exp_functions.h:3,
+                 from exp_functions/log10.cpp:1:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:109:1: note:   ‘log’
+ __MATHCALL (log,, (_Mdouble_ __x));
+ ^
+In file included from exp_functions/log10.cpp:1:0:
+exp_functions/../exp_functions.h:20:10: note:   ‘acp::log’
+  complex log(const complex);
+          ^
+exp_functions/log10.cpp:7:2: error: control reaches end of non-void function [-Werror=return-type]
+  }
+  ^
+cc1plus: all warnings being treated as errors
+exp_functions/pow.cpp: In function ‘acp::complex acp::pow(acp::complex, acp::complex)’:
+exp_functions/pow.cpp:6:18: error: ‘pow’ is not a member of ‘std’
+   return complex(std::pow(M_E, arg.get_re()) * std::cos(arg.get_im()), std::pow(M_E, arg.get_re()) * std::sin(arg.get_im()));
+                  ^
+exp_functions/pow.cpp:6:18: note: suggested alternatives:
+In file included from /usr/include/features.h:374:0,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/os_defines.h:39,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/c++config.h:426,
+                 from /usr/include/c++/4.8/iostream:38,
+                 from exp_functions/../complex.h:3,
+                 from exp_functions/../exp_functions.h:3,
+                 from exp_functions/pow.cpp:1:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:153:1: note:   ‘pow’
+ __MATHCALL (pow,, (_Mdouble_ __x, _Mdouble_ __y));
+ ^
+In file included from exp_functions/pow.cpp:1:0:
+exp_functions/../exp_functions.h:14:10: note:   ‘acp::pow’
+  complex pow(const complex, const int);
+          ^
+exp_functions/pow.cpp:6:48: error: ‘cos’ is not a member of ‘std’
+   return complex(std::pow(M_E, arg.get_re()) * std::cos(arg.get_im()), std::pow(M_E, arg.get_re()) * std::sin(arg.get_im()));
+                                                ^
+exp_functions/pow.cpp:6:48: note: suggested alternative:
+In file included from /usr/include/features.h:374:0,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/os_defines.h:39,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/c++config.h:426,
+                 from /usr/include/c++/4.8/iostream:38,
+                 from exp_functions/../complex.h:3,
+                 from exp_functions/../exp_functions.h:3,
+                 from exp_functions/pow.cpp:1:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:63:1: note:   ‘cos’
+ __MATHCALL (cos,, (_Mdouble_ __x));
+ ^
+exp_functions/pow.cpp:6:72: error: ‘pow’ is not a member of ‘std’
+   return complex(std::pow(M_E, arg.get_re()) * std::cos(arg.get_im()), std::pow(M_E, arg.get_re()) * std::sin(arg.get_im()));
+                                                                        ^
+exp_functions/pow.cpp:6:72: note: suggested alternatives:
+In file included from /usr/include/features.h:374:0,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/os_defines.h:39,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/c++config.h:426,
+                 from /usr/include/c++/4.8/iostream:38,
+                 from exp_functions/../complex.h:3,
+                 from exp_functions/../exp_functions.h:3,
+                 from exp_functions/pow.cpp:1:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:153:1: note:   ‘pow’
+ __MATHCALL (pow,, (_Mdouble_ __x, _Mdouble_ __y));
+ ^
+In file included from exp_functions/pow.cpp:1:0:
+exp_functions/../exp_functions.h:14:10: note:   ‘acp::pow’
+  complex pow(const complex, const int);
+          ^
+exp_functions/pow.cpp:6:102: error: ‘sin’ is not a member of ‘std’
+   return complex(std::pow(M_E, arg.get_re()) * std::cos(arg.get_im()), std::pow(M_E, arg.get_re()) * std::sin(arg.get_im()));
+                                                                                                      ^
+exp_functions/pow.cpp:6:102: note: suggested alternative:
+In file included from /usr/include/features.h:374:0,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/os_defines.h:39,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/c++config.h:426,
+                 from /usr/include/c++/4.8/iostream:38,
+                 from exp_functions/../complex.h:3,
+                 from exp_functions/../exp_functions.h:3,
+                 from exp_functions/pow.cpp:1:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:65:1: note:   ‘sin’
+ __MATHCALL (sin,, (_Mdouble_ __x));
+ ^
+exp_functions/pow.cpp: In function ‘acp::complex acp::pow(double, acp::complex)’:
+exp_functions/pow.cpp:12:18: error: ‘pow’ is not a member of ‘std’
+   return complex(std::pow(b, exp.get_re()) * std::cos(exp.get_im() * std::log(b)), std::pow(b, exp.get_re()) * std::sin(exp.get_im() * std::log(b)));
+                  ^
+exp_functions/pow.cpp:12:18: note: suggested alternatives:
+In file included from /usr/include/features.h:374:0,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/os_defines.h:39,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/c++config.h:426,
+                 from /usr/include/c++/4.8/iostream:38,
+                 from exp_functions/../complex.h:3,
+                 from exp_functions/../exp_functions.h:3,
+                 from exp_functions/pow.cpp:1:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:153:1: note:   ‘pow’
+ __MATHCALL (pow,, (_Mdouble_ __x, _Mdouble_ __y));
+ ^
+In file included from exp_functions/pow.cpp:1:0:
+exp_functions/../exp_functions.h:14:10: note:   ‘acp::pow’
+  complex pow(const complex, const int);
+          ^
+exp_functions/pow.cpp:12:46: error: ‘cos’ is not a member of ‘std’
+   return complex(std::pow(b, exp.get_re()) * std::cos(exp.get_im() * std::log(b)), std::pow(b, exp.get_re()) * std::sin(exp.get_im() * std::log(b)));
+                                              ^
+exp_functions/pow.cpp:12:46: note: suggested alternative:
+In file included from /usr/include/features.h:374:0,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/os_defines.h:39,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/c++config.h:426,
+                 from /usr/include/c++/4.8/iostream:38,
+                 from exp_functions/../complex.h:3,
+                 from exp_functions/../exp_functions.h:3,
+                 from exp_functions/pow.cpp:1:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:63:1: note:   ‘cos’
+ __MATHCALL (cos,, (_Mdouble_ __x));
+ ^
+exp_functions/pow.cpp:12:70: error: ‘log’ is not a member of ‘std’
+   return complex(std::pow(b, exp.get_re()) * std::cos(exp.get_im() * std::log(b)), std::pow(b, exp.get_re()) * std::sin(exp.get_im() * std::log(b)));
+                                                                      ^
+exp_functions/pow.cpp:12:70: note: suggested alternatives:
+In file included from /usr/include/features.h:374:0,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/os_defines.h:39,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/c++config.h:426,
+                 from /usr/include/c++/4.8/iostream:38,
+                 from exp_functions/../complex.h:3,
+                 from exp_functions/../exp_functions.h:3,
+                 from exp_functions/pow.cpp:1:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:109:1: note:   ‘log’
+ __MATHCALL (log,, (_Mdouble_ __x));
+ ^
+In file included from exp_functions/pow.cpp:1:0:
+exp_functions/../exp_functions.h:20:10: note:   ‘acp::log’
+  complex log(const complex);
+          ^
+exp_functions/pow.cpp:12:84: error: ‘pow’ is not a member of ‘std’
+   return complex(std::pow(b, exp.get_re()) * std::cos(exp.get_im() * std::log(b)), std::pow(b, exp.get_re()) * std::sin(exp.get_im() * std::log(b)));
+                                                                                    ^
+exp_functions/pow.cpp:12:84: note: suggested alternatives:
+In file included from /usr/include/features.h:374:0,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/os_defines.h:39,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/c++config.h:426,
+                 from /usr/include/c++/4.8/iostream:38,
+                 from exp_functions/../complex.h:3,
+                 from exp_functions/../exp_functions.h:3,
+                 from exp_functions/pow.cpp:1:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:153:1: note:   ‘pow’
+ __MATHCALL (pow,, (_Mdouble_ __x, _Mdouble_ __y));
+ ^
+In file included from exp_functions/pow.cpp:1:0:
+exp_functions/../exp_functions.h:14:10: note:   ‘acp::pow’
+  complex pow(const complex, const int);
+          ^
+exp_functions/pow.cpp:12:112: error: ‘sin’ is not a member of ‘std’
+   return complex(std::pow(b, exp.get_re()) * std::cos(exp.get_im() * std::log(b)), std::pow(b, exp.get_re()) * std::sin(exp.get_im() * std::log(b)));
+                                                                                                                ^
+exp_functions/pow.cpp:12:112: note: suggested alternative:
+In file included from /usr/include/features.h:374:0,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/os_defines.h:39,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/c++config.h:426,
+                 from /usr/include/c++/4.8/iostream:38,
+                 from exp_functions/../complex.h:3,
+                 from exp_functions/../exp_functions.h:3,
+                 from exp_functions/pow.cpp:1:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:65:1: note:   ‘sin’
+ __MATHCALL (sin,, (_Mdouble_ __x));
+ ^
+exp_functions/pow.cpp:12:136: error: ‘log’ is not a member of ‘std’
+   return complex(std::pow(b, exp.get_re()) * std::cos(exp.get_im() * std::log(b)), std::pow(b, exp.get_re()) * std::sin(exp.get_im() * std::log(b)));
+                                                                                                                                        ^
+exp_functions/pow.cpp:12:136: note: suggested alternatives:
+In file included from /usr/include/features.h:374:0,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/os_defines.h:39,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/c++config.h:426,
+                 from /usr/include/c++/4.8/iostream:38,
+                 from exp_functions/../complex.h:3,
+                 from exp_functions/../exp_functions.h:3,
+                 from exp_functions/pow.cpp:1:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:109:1: note:   ‘log’
+ __MATHCALL (log,, (_Mdouble_ __x));
+ ^
+In file included from exp_functions/pow.cpp:1:0:
+exp_functions/../exp_functions.h:20:10: note:   ‘acp::log’
+  complex log(const complex);
+          ^
+exp_functions/pow.cpp: In function ‘acp::complex acp::pow(acp::complex, acp::complex)’:
+exp_functions/pow.cpp:7:2: error: control reaches end of non-void function [-Werror=return-type]
+  }
+  ^
+exp_functions/pow.cpp: In function ‘acp::complex acp::pow(double, acp::complex)’:
+exp_functions/pow.cpp:13:2: error: control reaches end of non-void function [-Werror=return-type]
+  }
+  ^
+cc1plus: all warnings being treated as errors
+util_functions/arg.cpp: In function ‘double acp::arg(acp::complex)’:
+util_functions/arg.cpp:14:18: error: ‘atan’ is not a member of ‘std’
+   double theta = std::atan(other.get_im() / other.get_re());
+                  ^
+util_functions/arg.cpp:14:18: note: suggested alternative:
+In file included from /usr/include/features.h:374:0,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/os_defines.h:39,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/c++config.h:426,
+                 from /usr/include/c++/4.8/iostream:38,
+                 from util_functions/../complex.h:3,
+                 from util_functions/../util_functions.h:3,
+                 from util_functions/arg.cpp:1:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:58:1: note:   ‘atan’
+ __MATHCALL (atan,, (_Mdouble_ __x));
+ ^
+util_functions/polar.cpp: In function ‘acp::complex acp::polar(double, double)’:
+util_functions/polar.cpp:5:24: error: ‘cos’ is not a member of ‘std’
+   return complex(mag * std::cos(ang), mag * std::sin(ang));
+                        ^
+util_functions/polar.cpp:5:24: note: suggested alternative:
+In file included from /usr/include/features.h:374:0,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/os_defines.h:39,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/c++config.h:426,
+                 from /usr/include/c++/4.8/iostream:38,
+                 from util_functions/../complex.h:3,
+                 from util_functions/../util_functions.h:3,
+                 from util_functions/polar.cpp:1:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:63:1: note:   ‘cos’
+ __MATHCALL (cos,, (_Mdouble_ __x));
+ ^
+util_functions/polar.cpp:5:45: error: ‘sin’ is not a member of ‘std’
+   return complex(mag * std::cos(ang), mag * std::sin(ang));
+                                             ^
+util_functions/polar.cpp:5:45: note: suggested alternative:
+In file included from /usr/include/features.h:374:0,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/os_defines.h:39,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/c++config.h:426,
+                 from /usr/include/c++/4.8/iostream:38,
+                 from util_functions/../complex.h:3,
+                 from util_functions/../util_functions.h:3,
+                 from util_functions/polar.cpp:1:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:65:1: note:   ‘sin’
+ __MATHCALL (sin,, (_Mdouble_ __x));
+ ^
+util_functions/polar.cpp:6:2: error: control reaches end of non-void function [-Werror=return-type]
+  }
+  ^
+cc1plus: all warnings being treated as errors
+In file included from unit_tests/abs_test.cpp:1:0:
+unit_tests/../unit_tests.h: In function ‘bool acp::in_range(double, double, double)’:
+unit_tests/../unit_tests.h:21:24: error: call of overloaded ‘abs(double)’ is ambiguous
+   return std::abs(a - b) < error;
+                        ^
+unit_tests/../unit_tests.h:21:24: note: candidates are:
+In file included from /usr/include/c++/4.8/cstdlib:72:0,
+                 from /usr/include/c++/4.8/ext/string_conversions.h:41,
+                 from /usr/include/c++/4.8/bits/basic_string.h:2815,
+                 from /usr/include/c++/4.8/string:52,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from unit_tests/../complex.h:3,
+                 from unit_tests/../unit_tests.h:3,
+                 from unit_tests/abs_test.cpp:1:
+/usr/include/stdlib.h:775:12: note: int abs(int)
+ extern int abs (int __x) __THROW __attribute__ ((__const__)) __wur;
+            ^
+In file included from /usr/include/c++/4.8/ext/string_conversions.h:41:0,
+                 from /usr/include/c++/4.8/bits/basic_string.h:2815,
+                 from /usr/include/c++/4.8/string:52,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from unit_tests/../complex.h:3,
+                 from unit_tests/../unit_tests.h:3,
+                 from unit_tests/abs_test.cpp:1:
+/usr/include/c++/4.8/cstdlib:166:3: note: long int std::abs(long int)
+   abs(long __i) { return __builtin_labs(__i); }
+   ^
+/usr/include/c++/4.8/cstdlib:174:3: note: long long int std::abs(long long int)
+   abs(long long __x) { return __builtin_llabs (__x); }
+   ^
+In file included from unit_tests/abs_test.cpp:1:0:
+unit_tests/../unit_tests.h:22:2: error: control reaches end of non-void function [-Werror=return-type]
+  }
+  ^
+cc1plus: all warnings being treated as errors
+In file included from unit_tests/acos_test.cpp:1:0:
+unit_tests/../unit_tests.h: In function ‘bool acp::in_range(double, double, double)’:
+unit_tests/../unit_tests.h:21:24: error: call of overloaded ‘abs(double)’ is ambiguous
+   return std::abs(a - b) < error;
+                        ^
+unit_tests/../unit_tests.h:21:24: note: candidates are:
+In file included from /usr/include/c++/4.8/cstdlib:72:0,
+                 from /usr/include/c++/4.8/ext/string_conversions.h:41,
+                 from /usr/include/c++/4.8/bits/basic_string.h:2815,
+                 from /usr/include/c++/4.8/string:52,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from unit_tests/../complex.h:3,
+                 from unit_tests/../unit_tests.h:3,
+                 from unit_tests/acos_test.cpp:1:
+/usr/include/stdlib.h:775:12: note: int abs(int)
+ extern int abs (int __x) __THROW __attribute__ ((__const__)) __wur;
+            ^
+In file included from /usr/include/c++/4.8/ext/string_conversions.h:41:0,
+                 from /usr/include/c++/4.8/bits/basic_string.h:2815,
+                 from /usr/include/c++/4.8/string:52,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from unit_tests/../complex.h:3,
+                 from unit_tests/../unit_tests.h:3,
+                 from unit_tests/acos_test.cpp:1:
+/usr/include/c++/4.8/cstdlib:166:3: note: long int std::abs(long int)
+   abs(long __i) { return __builtin_labs(__i); }
+   ^
+/usr/include/c++/4.8/cstdlib:174:3: note: long long int std::abs(long long int)
+   abs(long long __x) { return __builtin_llabs (__x); }
+   ^
+In file included from unit_tests/arg_test.cpp:1:0:
+unit_tests/../unit_tests.h: In function ‘bool acp::in_range(double, double, double)’:
+unit_tests/../unit_tests.h:21:24: error: call of overloaded ‘abs(double)’ is ambiguous
+   return std::abs(a - b) < error;
+                        ^
+unit_tests/../unit_tests.h:21:24: note: candidates are:
+In file included from /usr/include/c++/4.8/cstdlib:72:0,
+                 from /usr/include/c++/4.8/ext/string_conversions.h:41,
+                 from /usr/include/c++/4.8/bits/basic_string.h:2815,
+                 from /usr/include/c++/4.8/string:52,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from unit_tests/../complex.h:3,
+                 from unit_tests/../unit_tests.h:3,
+                 from unit_tests/arg_test.cpp:1:
+/usr/include/stdlib.h:775:12: note: int abs(int)
+ extern int abs (int __x) __THROW __attribute__ ((__const__)) __wur;
+            ^
+In file included from /usr/include/c++/4.8/ext/string_conversions.h:41:0,
+                 from /usr/include/c++/4.8/bits/basic_string.h:2815,
+                 from /usr/include/c++/4.8/string:52,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from unit_tests/../complex.h:3,
+                 from unit_tests/../unit_tests.h:3,
+                 from unit_tests/arg_test.cpp:1:
+/usr/include/c++/4.8/cstdlib:166:3: note: long int std::abs(long int)
+   abs(long __i) { return __builtin_labs(__i); }
+   ^
+/usr/include/c++/4.8/cstdlib:174:3: note: long long int std::abs(long long int)
+   abs(long long __x) { return __builtin_llabs (__x); }
+   ^
+In file included from unit_tests/arg_test.cpp:1:0:
+unit_tests/../unit_tests.h:22:2: error: control reaches end of non-void function [-Werror=return-type]
+  }
+  ^
+cc1plus: all warnings being treated as errors
+In file included from unit_tests/arithmetic_test.cpp:1:0:
+unit_tests/../unit_tests.h: In function ‘bool acp::in_range(double, double, double)’:
+unit_tests/../unit_tests.h:21:24: error: call of overloaded ‘abs(double)’ is ambiguous
+   return std::abs(a - b) < error;
+                        ^
+unit_tests/../unit_tests.h:21:24: note: candidates are:
+In file included from /usr/include/c++/4.8/cstdlib:72:0,
+                 from /usr/include/c++/4.8/ext/string_conversions.h:41,
+                 from /usr/include/c++/4.8/bits/basic_string.h:2815,
+                 from /usr/include/c++/4.8/string:52,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from unit_tests/../complex.h:3,
+                 from unit_tests/../unit_tests.h:3,
+                 from unit_tests/arithmetic_test.cpp:1:
+/usr/include/stdlib.h:775:12: note: int abs(int)
+ extern int abs (int __x) __THROW __attribute__ ((__const__)) __wur;
+            ^
+In file included from /usr/include/c++/4.8/ext/string_conversions.h:41:0,
+                 from /usr/include/c++/4.8/bits/basic_string.h:2815,
+                 from /usr/include/c++/4.8/string:52,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from unit_tests/../complex.h:3,
+                 from unit_tests/../unit_tests.h:3,
+                 from unit_tests/arithmetic_test.cpp:1:
+/usr/include/c++/4.8/cstdlib:166:3: note: long int std::abs(long int)
+   abs(long __i) { return __builtin_labs(__i); }
+   ^
+/usr/include/c++/4.8/cstdlib:174:3: note: long long int std::abs(long long int)
+   abs(long long __x) { return __builtin_llabs (__x); }
+   ^
+In file included from unit_tests/asin_test.cpp:1:0:
+unit_tests/../unit_tests.h: In function ‘bool acp::in_range(double, double, double)’:
+unit_tests/../unit_tests.h:21:24: error: call of overloaded ‘abs(double)’ is ambiguous
+   return std::abs(a - b) < error;
+                        ^
+unit_tests/../unit_tests.h:21:24: note: candidates are:
+In file included from /usr/include/c++/4.8/cstdlib:72:0,
+                 from /usr/include/c++/4.8/ext/string_conversions.h:41,
+                 from /usr/include/c++/4.8/bits/basic_string.h:2815,
+                 from /usr/include/c++/4.8/string:52,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from unit_tests/../complex.h:3,
+                 from unit_tests/../unit_tests.h:3,
+                 from unit_tests/asin_test.cpp:1:
+/usr/include/stdlib.h:775:12: note: int abs(int)
+ extern int abs (int __x) __THROW __attribute__ ((__const__)) __wur;
+            ^
+In file included from /usr/include/c++/4.8/ext/string_conversions.h:41:0,
+                 from /usr/include/c++/4.8/bits/basic_string.h:2815,
+                 from /usr/include/c++/4.8/string:52,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from unit_tests/../complex.h:3,
+                 from unit_tests/../unit_tests.h:3,
+                 from unit_tests/asin_test.cpp:1:
+/usr/include/c++/4.8/cstdlib:166:3: note: long int std::abs(long int)
+   abs(long __i) { return __builtin_labs(__i); }
+   ^
+/usr/include/c++/4.8/cstdlib:174:3: note: long long int std::abs(long long int)
+   abs(long long __x) { return __builtin_llabs (__x); }
+   ^
+In file included from unit_tests/atan_test.cpp:1:0:
+unit_tests/../unit_tests.h: In function ‘bool acp::in_range(double, double, double)’:
+unit_tests/../unit_tests.h:21:24: error: call of overloaded ‘abs(double)’ is ambiguous
+   return std::abs(a - b) < error;
+                        ^
+unit_tests/../unit_tests.h:21:24: note: candidates are:
+In file included from /usr/include/c++/4.8/cstdlib:72:0,
+                 from /usr/include/c++/4.8/ext/string_conversions.h:41,
+                 from /usr/include/c++/4.8/bits/basic_string.h:2815,
+                 from /usr/include/c++/4.8/string:52,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from unit_tests/../complex.h:3,
+                 from unit_tests/../unit_tests.h:3,
+                 from unit_tests/atan_test.cpp:1:
+/usr/include/stdlib.h:775:12: note: int abs(int)
+ extern int abs (int __x) __THROW __attribute__ ((__const__)) __wur;
+            ^
+In file included from /usr/include/c++/4.8/ext/string_conversions.h:41:0,
+                 from /usr/include/c++/4.8/bits/basic_string.h:2815,
+                 from /usr/include/c++/4.8/string:52,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from unit_tests/../complex.h:3,
+                 from unit_tests/../unit_tests.h:3,
+                 from unit_tests/atan_test.cpp:1:
+/usr/include/c++/4.8/cstdlib:166:3: note: long int std::abs(long int)
+   abs(long __i) { return __builtin_labs(__i); }
+   ^
+/usr/include/c++/4.8/cstdlib:174:3: note: long long int std::abs(long long int)
+   abs(long long __x) { return __builtin_llabs (__x); }
+   ^
+In file included from unit_tests/conj_test.cpp:1:0:
+unit_tests/../unit_tests.h: In function ‘bool acp::in_range(double, double, double)’:
+unit_tests/../unit_tests.h:21:24: error: call of overloaded ‘abs(double)’ is ambiguous
+   return std::abs(a - b) < error;
+                        ^
+unit_tests/../unit_tests.h:21:24: note: candidates are:
+In file included from /usr/include/c++/4.8/cstdlib:72:0,
+                 from /usr/include/c++/4.8/ext/string_conversions.h:41,
+                 from /usr/include/c++/4.8/bits/basic_string.h:2815,
+                 from /usr/include/c++/4.8/string:52,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from unit_tests/../complex.h:3,
+                 from unit_tests/../unit_tests.h:3,
+                 from unit_tests/conj_test.cpp:1:
+/usr/include/stdlib.h:775:12: note: int abs(int)
+ extern int abs (int __x) __THROW __attribute__ ((__const__)) __wur;
+            ^
+In file included from /usr/include/c++/4.8/ext/string_conversions.h:41:0,
+                 from /usr/include/c++/4.8/bits/basic_string.h:2815,
+                 from /usr/include/c++/4.8/string:52,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from unit_tests/../complex.h:3,
+                 from unit_tests/../unit_tests.h:3,
+                 from unit_tests/conj_test.cpp:1:
+/usr/include/c++/4.8/cstdlib:166:3: note: long int std::abs(long int)
+   abs(long __i) { return __builtin_labs(__i); }
+   ^
+/usr/include/c++/4.8/cstdlib:174:3: note: long long int std::abs(long long int)
+   abs(long long __x) { return __builtin_llabs (__x); }
+   ^
+In file included from unit_tests/cos_test.cpp:1:0:
+unit_tests/../unit_tests.h: In function ‘bool acp::in_range(double, double, double)’:
+unit_tests/../unit_tests.h:21:24: error: call of overloaded ‘abs(double)’ is ambiguous
+   return std::abs(a - b) < error;
+                        ^
+unit_tests/../unit_tests.h:21:24: note: candidates are:
+In file included from /usr/include/c++/4.8/cstdlib:72:0,
+                 from /usr/include/c++/4.8/ext/string_conversions.h:41,
+                 from /usr/include/c++/4.8/bits/basic_string.h:2815,
+                 from /usr/include/c++/4.8/string:52,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from unit_tests/../complex.h:3,
+                 from unit_tests/../unit_tests.h:3,
+                 from unit_tests/cos_test.cpp:1:
+/usr/include/stdlib.h:775:12: note: int abs(int)
+ extern int abs (int __x) __THROW __attribute__ ((__const__)) __wur;
+            ^
+In file included from /usr/include/c++/4.8/ext/string_conversions.h:41:0,
+                 from /usr/include/c++/4.8/bits/basic_string.h:2815,
+                 from /usr/include/c++/4.8/string:52,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from unit_tests/../complex.h:3,
+                 from unit_tests/../unit_tests.h:3,
+                 from unit_tests/cos_test.cpp:1:
+/usr/include/c++/4.8/cstdlib:166:3: note: long int std::abs(long int)
+   abs(long __i) { return __builtin_labs(__i); }
+   ^
+/usr/include/c++/4.8/cstdlib:174:3: note: long long int std::abs(long long int)
+   abs(long long __x) { return __builtin_llabs (__x); }
+   ^
+In file included from unit_tests/cosh_test.cpp:1:0:
+unit_tests/../unit_tests.h: In function ‘bool acp::in_range(double, double, double)’:
+unit_tests/../unit_tests.h:21:24: error: call of overloaded ‘abs(double)’ is ambiguous
+   return std::abs(a - b) < error;
+                        ^
+unit_tests/../unit_tests.h:21:24: note: candidates are:
+In file included from /usr/include/c++/4.8/cstdlib:72:0,
+                 from /usr/include/c++/4.8/ext/string_conversions.h:41,
+                 from /usr/include/c++/4.8/bits/basic_string.h:2815,
+                 from /usr/include/c++/4.8/string:52,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from unit_tests/../complex.h:3,
+                 from unit_tests/../unit_tests.h:3,
+                 from unit_tests/cosh_test.cpp:1:
+/usr/include/stdlib.h:775:12: note: int abs(int)
+ extern int abs (int __x) __THROW __attribute__ ((__const__)) __wur;
+            ^
+In file included from /usr/include/c++/4.8/ext/string_conversions.h:41:0,
+                 from /usr/include/c++/4.8/bits/basic_string.h:2815,
+                 from /usr/include/c++/4.8/string:52,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from unit_tests/../complex.h:3,
+                 from unit_tests/../unit_tests.h:3,
+                 from unit_tests/cosh_test.cpp:1:
+/usr/include/c++/4.8/cstdlib:166:3: note: long int std::abs(long int)
+   abs(long __i) { return __builtin_labs(__i); }
+   ^
+/usr/include/c++/4.8/cstdlib:174:3: note: long long int std::abs(long long int)
+   abs(long long __x) { return __builtin_llabs (__x); }
+   ^
+In file included from unit_tests/exp_test.cpp:1:0:
+unit_tests/../unit_tests.h: In function ‘bool acp::in_range(double, double, double)’:
+unit_tests/../unit_tests.h:21:24: error: call of overloaded ‘abs(double)’ is ambiguous
+   return std::abs(a - b) < error;
+                        ^
+unit_tests/../unit_tests.h:21:24: note: candidates are:
+In file included from /usr/include/c++/4.8/cstdlib:72:0,
+                 from /usr/include/c++/4.8/ext/string_conversions.h:41,
+                 from /usr/include/c++/4.8/bits/basic_string.h:2815,
+                 from /usr/include/c++/4.8/string:52,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from unit_tests/../complex.h:3,
+                 from unit_tests/../unit_tests.h:3,
+                 from unit_tests/exp_test.cpp:1:
+/usr/include/stdlib.h:775:12: note: int abs(int)
+ extern int abs (int __x) __THROW __attribute__ ((__const__)) __wur;
+            ^
+In file included from /usr/include/c++/4.8/ext/string_conversions.h:41:0,
+                 from /usr/include/c++/4.8/bits/basic_string.h:2815,
+                 from /usr/include/c++/4.8/string:52,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from unit_tests/../complex.h:3,
+                 from unit_tests/../unit_tests.h:3,
+                 from unit_tests/exp_test.cpp:1:
+/usr/include/c++/4.8/cstdlib:166:3: note: long int std::abs(long int)
+   abs(long __i) { return __builtin_labs(__i); }
+   ^
+/usr/include/c++/4.8/cstdlib:174:3: note: long long int std::abs(long long int)
+   abs(long long __x) { return __builtin_llabs (__x); }
+   ^
+In file included from unit_tests/imag_test.cpp:1:0:
+unit_tests/../unit_tests.h: In function ‘bool acp::in_range(double, double, double)’:
+unit_tests/../unit_tests.h:21:24: error: call of overloaded ‘abs(double)’ is ambiguous
+   return std::abs(a - b) < error;
+                        ^
+unit_tests/../unit_tests.h:21:24: note: candidates are:
+In file included from /usr/include/c++/4.8/cstdlib:72:0,
+                 from /usr/include/c++/4.8/ext/string_conversions.h:41,
+                 from /usr/include/c++/4.8/bits/basic_string.h:2815,
+                 from /usr/include/c++/4.8/string:52,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from unit_tests/../complex.h:3,
+                 from unit_tests/../unit_tests.h:3,
+                 from unit_tests/imag_test.cpp:1:
+/usr/include/stdlib.h:775:12: note: int abs(int)
+ extern int abs (int __x) __THROW __attribute__ ((__const__)) __wur;
+            ^
+In file included from /usr/include/c++/4.8/ext/string_conversions.h:41:0,
+                 from /usr/include/c++/4.8/bits/basic_string.h:2815,
+                 from /usr/include/c++/4.8/string:52,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from unit_tests/../complex.h:3,
+                 from unit_tests/../unit_tests.h:3,
+                 from unit_tests/imag_test.cpp:1:
+/usr/include/c++/4.8/cstdlib:166:3: note: long int std::abs(long int)
+   abs(long __i) { return __builtin_labs(__i); }
+   ^
+/usr/include/c++/4.8/cstdlib:174:3: note: long long int std::abs(long long int)
+   abs(long long __x) { return __builtin_llabs (__x); }
+   ^
+In file included from unit_tests/log10_test.cpp:1:0:
+unit_tests/../unit_tests.h: In function ‘bool acp::in_range(double, double, double)’:
+unit_tests/../unit_tests.h:21:24: error: call of overloaded ‘abs(double)’ is ambiguous
+   return std::abs(a - b) < error;
+                        ^
+unit_tests/../unit_tests.h:21:24: note: candidates are:
+In file included from /usr/include/c++/4.8/cstdlib:72:0,
+                 from /usr/include/c++/4.8/ext/string_conversions.h:41,
+                 from /usr/include/c++/4.8/bits/basic_string.h:2815,
+                 from /usr/include/c++/4.8/string:52,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from unit_tests/../complex.h:3,
+                 from unit_tests/../unit_tests.h:3,
+                 from unit_tests/log10_test.cpp:1:
+/usr/include/stdlib.h:775:12: note: int abs(int)
+ extern int abs (int __x) __THROW __attribute__ ((__const__)) __wur;
+            ^
+In file included from /usr/include/c++/4.8/ext/string_conversions.h:41:0,
+                 from /usr/include/c++/4.8/bits/basic_string.h:2815,
+                 from /usr/include/c++/4.8/string:52,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from unit_tests/../complex.h:3,
+                 from unit_tests/../unit_tests.h:3,
+                 from unit_tests/log10_test.cpp:1:
+/usr/include/c++/4.8/cstdlib:166:3: note: long int std::abs(long int)
+   abs(long __i) { return __builtin_labs(__i); }
+   ^
+/usr/include/c++/4.8/cstdlib:174:3: note: long long int std::abs(long long int)
+   abs(long long __x) { return __builtin_llabs (__x); }
+   ^
+In file included from unit_tests/log_test.cpp:1:0:
+unit_tests/../unit_tests.h: In function ‘bool acp::in_range(double, double, double)’:
+unit_tests/../unit_tests.h:21:24: error: call of overloaded ‘abs(double)’ is ambiguous
+   return std::abs(a - b) < error;
+                        ^
+unit_tests/../unit_tests.h:21:24: note: candidates are:
+In file included from /usr/include/c++/4.8/cstdlib:72:0,
+                 from /usr/include/c++/4.8/ext/string_conversions.h:41,
+                 from /usr/include/c++/4.8/bits/basic_string.h:2815,
+                 from /usr/include/c++/4.8/string:52,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from unit_tests/../complex.h:3,
+                 from unit_tests/../unit_tests.h:3,
+                 from unit_tests/log_test.cpp:1:
+/usr/include/stdlib.h:775:12: note: int abs(int)
+ extern int abs (int __x) __THROW __attribute__ ((__const__)) __wur;
+            ^
+In file included from /usr/include/c++/4.8/ext/string_conversions.h:41:0,
+                 from /usr/include/c++/4.8/bits/basic_string.h:2815,
+                 from /usr/include/c++/4.8/string:52,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from unit_tests/../complex.h:3,
+                 from unit_tests/../unit_tests.h:3,
+                 from unit_tests/log_test.cpp:1:
+/usr/include/c++/4.8/cstdlib:166:3: note: long int std::abs(long int)
+   abs(long __i) { return __builtin_labs(__i); }
+   ^
+/usr/include/c++/4.8/cstdlib:174:3: note: long long int std::abs(long long int)
+   abs(long long __x) { return __builtin_llabs (__x); }
+   ^
+In file included from unit_tests/norm_test.cpp:1:0:
+unit_tests/../unit_tests.h: In function ‘bool acp::in_range(double, double, double)’:
+unit_tests/../unit_tests.h:21:24: error: call of overloaded ‘abs(double)’ is ambiguous
+   return std::abs(a - b) < error;
+                        ^
+unit_tests/../unit_tests.h:21:24: note: candidates are:
+In file included from /usr/include/c++/4.8/cstdlib:72:0,
+                 from /usr/include/c++/4.8/ext/string_conversions.h:41,
+                 from /usr/include/c++/4.8/bits/basic_string.h:2815,
+                 from /usr/include/c++/4.8/string:52,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from unit_tests/../complex.h:3,
+                 from unit_tests/../unit_tests.h:3,
+                 from unit_tests/norm_test.cpp:1:
+/usr/include/stdlib.h:775:12: note: int abs(int)
+ extern int abs (int __x) __THROW __attribute__ ((__const__)) __wur;
+            ^
+In file included from /usr/include/c++/4.8/ext/string_conversions.h:41:0,
+                 from /usr/include/c++/4.8/bits/basic_string.h:2815,
+                 from /usr/include/c++/4.8/string:52,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from unit_tests/../complex.h:3,
+                 from unit_tests/../unit_tests.h:3,
+                 from unit_tests/norm_test.cpp:1:
+/usr/include/c++/4.8/cstdlib:166:3: note: long int std::abs(long int)
+   abs(long __i) { return __builtin_labs(__i); }
+   ^
+/usr/include/c++/4.8/cstdlib:174:3: note: long long int std::abs(long long int)
+   abs(long long __x) { return __builtin_llabs (__x); }
+   ^
+In file included from unit_tests/norm_test.cpp:1:0:
+unit_tests/../unit_tests.h:22:2: error: control reaches end of non-void function [-Werror=return-type]
+  }
+  ^
+cc1plus: all warnings being treated as errors
+In file included from unit_tests/polar_test.cpp:1:0:
+unit_tests/../unit_tests.h: In function ‘bool acp::in_range(double, double, double)’:
+unit_tests/../unit_tests.h:21:24: error: call of overloaded ‘abs(double)’ is ambiguous
+   return std::abs(a - b) < error;
+                        ^
+unit_tests/../unit_tests.h:21:24: note: candidates are:
+In file included from /usr/include/c++/4.8/cstdlib:72:0,
+                 from /usr/include/c++/4.8/ext/string_conversions.h:41,
+                 from /usr/include/c++/4.8/bits/basic_string.h:2815,
+                 from /usr/include/c++/4.8/string:52,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from unit_tests/../complex.h:3,
+                 from unit_tests/../unit_tests.h:3,
+                 from unit_tests/polar_test.cpp:1:
+/usr/include/stdlib.h:775:12: note: int abs(int)
+ extern int abs (int __x) __THROW __attribute__ ((__const__)) __wur;
+            ^
+In file included from /usr/include/c++/4.8/ext/string_conversions.h:41:0,
+                 from /usr/include/c++/4.8/bits/basic_string.h:2815,
+                 from /usr/include/c++/4.8/string:52,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from unit_tests/../complex.h:3,
+                 from unit_tests/../unit_tests.h:3,
+                 from unit_tests/polar_test.cpp:1:
+/usr/include/c++/4.8/cstdlib:166:3: note: long int std::abs(long int)
+   abs(long __i) { return __builtin_labs(__i); }
+   ^
+/usr/include/c++/4.8/cstdlib:174:3: note: long long int std::abs(long long int)
+   abs(long long __x) { return __builtin_llabs (__x); }
+   ^
+In file included from unit_tests/pow_test.cpp:1:0:
+unit_tests/../unit_tests.h: In function ‘bool acp::in_range(double, double, double)’:
+unit_tests/../unit_tests.h:21:24: error: call of overloaded ‘abs(double)’ is ambiguous
+   return std::abs(a - b) < error;
+                        ^
+unit_tests/../unit_tests.h:21:24: note: candidates are:
+In file included from /usr/include/c++/4.8/cstdlib:72:0,
+                 from /usr/include/c++/4.8/ext/string_conversions.h:41,
+                 from /usr/include/c++/4.8/bits/basic_string.h:2815,
+                 from /usr/include/c++/4.8/string:52,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from unit_tests/../complex.h:3,
+                 from unit_tests/../unit_tests.h:3,
+                 from unit_tests/pow_test.cpp:1:
+/usr/include/stdlib.h:775:12: note: int abs(int)
+ extern int abs (int __x) __THROW __attribute__ ((__const__)) __wur;
+            ^
+In file included from /usr/include/c++/4.8/ext/string_conversions.h:41:0,
+                 from /usr/include/c++/4.8/bits/basic_string.h:2815,
+                 from /usr/include/c++/4.8/string:52,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from unit_tests/../complex.h:3,
+                 from unit_tests/../unit_tests.h:3,
+                 from unit_tests/pow_test.cpp:1:
+/usr/include/c++/4.8/cstdlib:166:3: note: long int std::abs(long int)
+   abs(long __i) { return __builtin_labs(__i); }
+   ^
+/usr/include/c++/4.8/cstdlib:174:3: note: long long int std::abs(long long int)
+   abs(long long __x) { return __builtin_llabs (__x); }
+   ^
+In file included from unit_tests/real_test.cpp:1:0:
+unit_tests/../unit_tests.h: In function ‘bool acp::in_range(double, double, double)’:
+unit_tests/../unit_tests.h:21:24: error: call of overloaded ‘abs(double)’ is ambiguous
+   return std::abs(a - b) < error;
+                        ^
+unit_tests/../unit_tests.h:21:24: note: candidates are:
+In file included from /usr/include/c++/4.8/cstdlib:72:0,
+                 from /usr/include/c++/4.8/ext/string_conversions.h:41,
+                 from /usr/include/c++/4.8/bits/basic_string.h:2815,
+                 from /usr/include/c++/4.8/string:52,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from unit_tests/../complex.h:3,
+                 from unit_tests/../unit_tests.h:3,
+                 from unit_tests/real_test.cpp:1:
+/usr/include/stdlib.h:775:12: note: int abs(int)
+ extern int abs (int __x) __THROW __attribute__ ((__const__)) __wur;
+            ^
+In file included from /usr/include/c++/4.8/ext/string_conversions.h:41:0,
+                 from /usr/include/c++/4.8/bits/basic_string.h:2815,
+                 from /usr/include/c++/4.8/string:52,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from unit_tests/../complex.h:3,
+                 from unit_tests/../unit_tests.h:3,
+                 from unit_tests/real_test.cpp:1:
+/usr/include/c++/4.8/cstdlib:166:3: note: long int std::abs(long int)
+   abs(long __i) { return __builtin_labs(__i); }
+   ^
+/usr/include/c++/4.8/cstdlib:174:3: note: long long int std::abs(long long int)
+   abs(long long __x) { return __builtin_llabs (__x); }
+   ^
+In file included from unit_tests/sin_test.cpp:1:0:
+unit_tests/../unit_tests.h: In function ‘bool acp::in_range(double, double, double)’:
+unit_tests/../unit_tests.h:21:24: error: call of overloaded ‘abs(double)’ is ambiguous
+   return std::abs(a - b) < error;
+                        ^
+unit_tests/../unit_tests.h:21:24: note: candidates are:
+In file included from /usr/include/c++/4.8/cstdlib:72:0,
+                 from /usr/include/c++/4.8/ext/string_conversions.h:41,
+                 from /usr/include/c++/4.8/bits/basic_string.h:2815,
+                 from /usr/include/c++/4.8/string:52,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from unit_tests/../complex.h:3,
+                 from unit_tests/../unit_tests.h:3,
+                 from unit_tests/sin_test.cpp:1:
+/usr/include/stdlib.h:775:12: note: int abs(int)
+ extern int abs (int __x) __THROW __attribute__ ((__const__)) __wur;
+            ^
+In file included from /usr/include/c++/4.8/ext/string_conversions.h:41:0,
+                 from /usr/include/c++/4.8/bits/basic_string.h:2815,
+                 from /usr/include/c++/4.8/string:52,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from unit_tests/../complex.h:3,
+                 from unit_tests/../unit_tests.h:3,
+                 from unit_tests/sin_test.cpp:1:
+/usr/include/c++/4.8/cstdlib:166:3: note: long int std::abs(long int)
+   abs(long __i) { return __builtin_labs(__i); }
+   ^
+/usr/include/c++/4.8/cstdlib:174:3: note: long long int std::abs(long long int)
+   abs(long long __x) { return __builtin_llabs (__x); }
+   ^
+In file included from unit_tests/sinh_test.cpp:1:0:
+unit_tests/../unit_tests.h: In function ‘bool acp::in_range(double, double, double)’:
+unit_tests/../unit_tests.h:21:24: error: call of overloaded ‘abs(double)’ is ambiguous
+   return std::abs(a - b) < error;
+                        ^
+unit_tests/../unit_tests.h:21:24: note: candidates are:
+In file included from /usr/include/c++/4.8/cstdlib:72:0,
+                 from /usr/include/c++/4.8/ext/string_conversions.h:41,
+                 from /usr/include/c++/4.8/bits/basic_string.h:2815,
+                 from /usr/include/c++/4.8/string:52,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from unit_tests/../complex.h:3,
+                 from unit_tests/../unit_tests.h:3,
+                 from unit_tests/sinh_test.cpp:1:
+/usr/include/stdlib.h:775:12: note: int abs(int)
+ extern int abs (int __x) __THROW __attribute__ ((__const__)) __wur;
+            ^
+In file included from /usr/include/c++/4.8/ext/string_conversions.h:41:0,
+                 from /usr/include/c++/4.8/bits/basic_string.h:2815,
+                 from /usr/include/c++/4.8/string:52,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from unit_tests/../complex.h:3,
+                 from unit_tests/../unit_tests.h:3,
+                 from unit_tests/sinh_test.cpp:1:
+/usr/include/c++/4.8/cstdlib:166:3: note: long int std::abs(long int)
+   abs(long __i) { return __builtin_labs(__i); }
+   ^
+/usr/include/c++/4.8/cstdlib:174:3: note: long long int std::abs(long long int)
+   abs(long long __x) { return __builtin_llabs (__x); }
+   ^
+In file included from unit_tests/sqrt_test.cpp:1:0:
+unit_tests/../unit_tests.h: In function ‘bool acp::in_range(double, double, double)’:
+unit_tests/../unit_tests.h:21:24: error: call of overloaded ‘abs(double)’ is ambiguous
+   return std::abs(a - b) < error;
+                        ^
+unit_tests/../unit_tests.h:21:24: note: candidates are:
+In file included from /usr/include/c++/4.8/cstdlib:72:0,
+                 from /usr/include/c++/4.8/ext/string_conversions.h:41,
+                 from /usr/include/c++/4.8/bits/basic_string.h:2815,
+                 from /usr/include/c++/4.8/string:52,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from unit_tests/../complex.h:3,
+                 from unit_tests/../unit_tests.h:3,
+                 from unit_tests/sqrt_test.cpp:1:
+/usr/include/stdlib.h:775:12: note: int abs(int)
+ extern int abs (int __x) __THROW __attribute__ ((__const__)) __wur;
+            ^
+In file included from /usr/include/c++/4.8/ext/string_conversions.h:41:0,
+                 from /usr/include/c++/4.8/bits/basic_string.h:2815,
+                 from /usr/include/c++/4.8/string:52,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from unit_tests/../complex.h:3,
+                 from unit_tests/../unit_tests.h:3,
+                 from unit_tests/sqrt_test.cpp:1:
+/usr/include/c++/4.8/cstdlib:166:3: note: long int std::abs(long int)
+   abs(long __i) { return __builtin_labs(__i); }
+   ^
+/usr/include/c++/4.8/cstdlib:174:3: note: long long int std::abs(long long int)
+   abs(long long __x) { return __builtin_llabs (__x); }
+   ^
+In file included from unit_tests/tan_test.cpp:1:0:
+unit_tests/../unit_tests.h: In function ‘bool acp::in_range(double, double, double)’:
+unit_tests/../unit_tests.h:21:24: error: call of overloaded ‘abs(double)’ is ambiguous
+   return std::abs(a - b) < error;
+                        ^
+unit_tests/../unit_tests.h:21:24: note: candidates are:
+In file included from /usr/include/c++/4.8/cstdlib:72:0,
+                 from /usr/include/c++/4.8/ext/string_conversions.h:41,
+                 from /usr/include/c++/4.8/bits/basic_string.h:2815,
+                 from /usr/include/c++/4.8/string:52,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from unit_tests/../complex.h:3,
+                 from unit_tests/../unit_tests.h:3,
+                 from unit_tests/tan_test.cpp:1:
+/usr/include/stdlib.h:775:12: note: int abs(int)
+ extern int abs (int __x) __THROW __attribute__ ((__const__)) __wur;
+            ^
+In file included from /usr/include/c++/4.8/ext/string_conversions.h:41:0,
+                 from /usr/include/c++/4.8/bits/basic_string.h:2815,
+                 from /usr/include/c++/4.8/string:52,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from unit_tests/../complex.h:3,
+                 from unit_tests/../unit_tests.h:3,
+                 from unit_tests/tan_test.cpp:1:
+/usr/include/c++/4.8/cstdlib:166:3: note: long int std::abs(long int)
+   abs(long __i) { return __builtin_labs(__i); }
+   ^
+/usr/include/c++/4.8/cstdlib:174:3: note: long long int std::abs(long long int)
+   abs(long long __x) { return __builtin_llabs (__x); }
+   ^
+In file included from unit_tests/tanh_test.cpp:1:0:
+unit_tests/../unit_tests.h: In function ‘bool acp::in_range(double, double, double)’:
+unit_tests/../unit_tests.h:21:24: error: call of overloaded ‘abs(double)’ is ambiguous
+   return std::abs(a - b) < error;
+                        ^
+unit_tests/../unit_tests.h:21:24: note: candidates are:
+In file included from /usr/include/c++/4.8/cstdlib:72:0,
+                 from /usr/include/c++/4.8/ext/string_conversions.h:41,
+                 from /usr/include/c++/4.8/bits/basic_string.h:2815,
+                 from /usr/include/c++/4.8/string:52,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from unit_tests/../complex.h:3,
+                 from unit_tests/../unit_tests.h:3,
+                 from unit_tests/tanh_test.cpp:1:
+/usr/include/stdlib.h:775:12: note: int abs(int)
+ extern int abs (int __x) __THROW __attribute__ ((__const__)) __wur;
+            ^
+In file included from /usr/include/c++/4.8/ext/string_conversions.h:41:0,
+                 from /usr/include/c++/4.8/bits/basic_string.h:2815,
+                 from /usr/include/c++/4.8/string:52,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from unit_tests/../complex.h:3,
+                 from unit_tests/../unit_tests.h:3,
+                 from unit_tests/tanh_test.cpp:1:
+/usr/include/c++/4.8/cstdlib:166:3: note: long int std::abs(long int)
+   abs(long __i) { return __builtin_labs(__i); }
+   ^
+/usr/include/c++/4.8/cstdlib:174:3: note: long long int std::abs(long long int)
+   abs(long long __x) { return __builtin_llabs (__x); }
+   ^
