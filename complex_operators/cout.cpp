@@ -1,4 +1,4 @@
-#include "..\complex.h"
+#include "../complex.h"
 
 namespace acp {
 	std::ostream& operator<<(std::ostream& stream, const acp::complex& complex) {

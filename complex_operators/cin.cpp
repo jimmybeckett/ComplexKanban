@@ -1,6 +1,6 @@
 #include <string>
 #include <regex>
-#include "..\complex.h"
+#include "../complex.h"
 
 namespace acp {
 	std::istream& operator>>(std::istream& stream, acp::complex& complex) { //ex. 3 + 2i

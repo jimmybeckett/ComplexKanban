@@ -1,4 +1,4 @@
-#include "..\complex.h"
+#include "../complex.h"
 
 namespace acp {
 	complex complex::operator/(const complex& other) const {
