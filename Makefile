@@ -10,3 +10,6 @@ all:
 
 run:
 	./prog.out
+
+clean:
+	rm -f prog.out
