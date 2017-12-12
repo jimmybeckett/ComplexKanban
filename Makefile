@@ -1,28 +1,42 @@
-objects := $(wildcard *.o complex_operators/*.o exp_functions/*.o trig_functions/*.o unit_tests/*.o util_functions/*.o)
-complex_operators := $(wildcard complex_operators/*.o)
-exp_functions := $(wildcard exp_functions/*.o)
-trig_functions := $(wildcard trig_functions/*.o)
-util_functions := $(wildcard util_functions/*.o)
-unit_tests := $(wildcard unit_tests/*.o)
+CC=g++
+CFLAGS=-Wall -Werror -g -std=c++11
+SOURCES=trig_functions/*.cpp exp_functions/*.cpp util_functions/*.cpp unit_tests/*.cpp complex_operators/*.cpp
+MAINFILES=*.cpp
+CLIBS=-lm
+OUTFILE=libkanban.o
+TESTFILEOUT=prog.out
+TESTFILES=$(wildcard unit_tests/*.cpp)
+LIBFILE=libkanban.a
+ARCHIVER=ar
+ARCHIVEROPTS=rvs
 
-VPATH = complex_operators exp_functions trig_functions unit_tests util_functions
+SOURCEFOLDERS:=exp_functions util_functions trig_functions complex_operators
+SOURCEFILES=$(foreach x, $(SOURCEFOLDERS), $(wildcard $(x)/*.cpp))
+OBJECTS=$(foreach x, $(basename $(SOURCEFILES)), $(x).o)
 
-out : $(objects)
-	g++ -o out $(objects)
-	
-run.o : $(objects)
+%.o: %.cpp
+	$(CC) $(CFLAGS) -c $< $(CLIBS) -o $@
 
-unit_tests.o : unit_tests.h $(complex_operators) $(exp_functions) $(trig_functions) $(util_functions) 
-	unit_tests.o
+$(LIBFILE): $(OBJECTS)
+	$(ARCHIVER) $(ARCHIVEROPTS) $(LIBFILE) $(OBJECTS)
+	@echo libfile made.
 
-exp_functions.o : exp_functions.h $(util_functions) $(complex_operators)
-	exp_functions.o
+all: $(LIBFILE)
 
-trig_functions.o : trig_functions.h complex.h $(exp_functions) $(complex_operators)
-	trig_functions.o
+chunk:
+	$(CC) $(CFLAGS) $(SOURCES) $(MAINFILES) $(CLIBS) -o $(TESTFILEOUT)
+	./$(TESTFILEOUT)
 
-util_functions.o : util_functions.h $(complex_operators)
-	util_functions.o
+$(TESTFILEOUT): $(LIBFILE)
+	$(CC) $(CFLAGS) $(MAINFILES) $(TESTFILES) $(LIBFILE) $(CLIBS) -o $(TESTFILEOUT)
 
-complex_operators.o : complex.h
-	complex_operators.o
+test: $(TESTFILEOUT)
+	./$(TESTFILEOUT)
+
+run: test
+
+clean:
+	rm -f $(OBJECTS)
+	rm -f $(TESTFILEOUT) $(OUTFILE) $(LIBFILE)
+
+>>>>>>> 3952f76956ce584cd0a8bcec84be913a5709cfc0
