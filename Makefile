@@ -1,17 +1,12 @@
-objects = *.o complex_operators/*.o exp_functions/*.o trig_functions/*.o unit_tests/*.o util_functions/*.o
-#fix objects
+CC=g++
+CFLAGS=-Wall -Werror -g -std=c++11
+SOURCES=*.cpp trig_functions/*.cpp exp_functions/*.cpp util_functions/*.cpp unit_tests/*.cpp complex_operators/*.cpp
+CLIBS=-lm
+OUTFILE=prog.out
 
-out : $(objects)
-        cc -o out $(objects)
-	
-run.o : complex.h exp_functions.h trig_functions.h unit_tests.h util_functions.h
-unit_tests.o : complex.h exp_functions.h trig_functions.h util_functions.h
-complex_operators.o : complex.h
-exp_functions.o : complex.h util_functions.h
-trig_functions.o : complex.h exp_functions.h
-util_functions.o : complex.h
-complex_operators.o : complex.h
+all:
+	$(CC) $(CFLAGS) $(SOURCES) $(CLIBS) -o $(OUTFILE)
+	@echo Make run to run.
 
-.PHONY : clean
-clean :
-        rm edit $(objects)
+run:
+	./prog.out
