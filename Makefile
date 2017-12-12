@@ -38,5 +38,3 @@ run: test
 clean:
 	rm -f $(OBJECTS)
 	rm -f $(TESTFILEOUT) $(OUTFILE) $(LIBFILE)
-
->>>>>>> 3952f76956ce584cd0a8bcec84be913a5709cfc0
