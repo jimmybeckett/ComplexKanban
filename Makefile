@@ -1,15 +1,41 @@
 CC=g++
 CFLAGS=-Wall -Werror -g -std=c++11
-SOURCES=*.cpp trig_functions/*.cpp exp_functions/*.cpp util_functions/*.cpp unit_tests/*.cpp complex_operators/*.cpp
+SOURCES=trig_functions/*.cpp exp_functions/*.cpp util_functions/*.cpp unit_tests/*.cpp complex_operators/*.cpp
+MAINFILES=*.cpp
 CLIBS=-lm
-OUTFILE=prog.out
+OUTFILE=libkanban.o
+TESTFILEOUT=prog.out
+TESTFILES=$(wildcard unit_tests/*.cpp)
+LIBFILE=libkanban.a
+ARCHIVER=ar
+ARCHIVEROPTS=rvs
 
-all:
-	$(CC) $(CFLAGS) $(SOURCES) $(CLIBS) -o $(OUTFILE)
-	@echo Make run to run.
+SOURCEFOLDERS:=exp_functions util_functions trig_functions complex_operators
+SOURCEFILES=$(foreach x, $(SOURCEFOLDERS), $(wildcard $(x)/*.cpp))
+OBJECTS=$(foreach x, $(basename $(SOURCEFILES)), $(x).o)
 
-run:
-	./prog.out
+%.o: %.cpp
+	$(CC) $(CFLAGS) -c $< $(CLIBS) -o $@
+
+$(LIBFILE): $(OBJECTS)
+	$(ARCHIVER) $(ARCHIVEROPTS) $(LIBFILE) $(OBJECTS)
+	@echo libfile made.
+
+all: $(LIBFILE)
+
+chunk:
+	$(CC) $(CFLAGS) $(SOURCES) $(MAINFILES) $(CLIBS) -o $(TESTFILEOUT)
+	./$(TESTFILEOUT)
+
+$(TESTFILEOUT): $(LIBFILE)
+	$(CC) $(CFLAGS) $(MAINFILES) $(TESTFILES) $(LIBFILE) $(CLIBS) -o $(TESTFILEOUT)
+
+test: $(TESTFILEOUT)
+	./$(TESTFILEOUT)
+
+run: test
 
 clean:
-	rm -f prog.out
+	rm -f $(OBJECTS)
+	rm -f $(TESTFILEOUT) $(OUTFILE) $(LIBFILE)
+
