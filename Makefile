@@ -22,6 +22,7 @@ $(LIBFILE): $(OBJECTS)
 	@echo libfile made.
 
 all: $(LIBFILE)
+	@echo all done.
 
 chunk:
 	$(CC) $(CFLAGS) $(SOURCES) $(MAINFILES) $(CLIBS) -o $(TESTFILEOUT)
@@ -34,6 +35,7 @@ test: $(TESTFILEOUT)
 	./$(TESTFILEOUT)
 
 run: test
+	@echo ran.
 
 clean:
 	rm -f $(OBJECTS)
