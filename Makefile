@@ -40,4 +40,3 @@ run: test
 clean:
 	rm -f $(OBJECTS)
 	rm -f $(TESTFILEOUT) $(OUTFILE) $(LIBFILE)
-
