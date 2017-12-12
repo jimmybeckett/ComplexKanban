@@ -12,7 +12,6 @@ int main(int argc, char** argv) {
 		tf();
 	}
 	std::cout << test_functions.size() << " test type" << (test_functions.size() != 1 ? "s" : "") << " ran, all tests passed!" << std::endl;
-
 	//Shockey stuff from here down
 
 	//complex x(3, 3), y(4, 4);
